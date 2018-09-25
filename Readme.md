@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Харлов](https://up.htmlacademy.ru/adaptive/15/user/52016).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://up.htmlacademy.ru/adaptive/15/user/61574).
 
 ---
 
