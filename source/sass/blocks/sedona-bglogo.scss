@@ -1,3 +1,8 @@
-.sedona-bglogo__title {
-  background-color: green;
+.sedona-bglogo {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: $main-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 390px;
 }
