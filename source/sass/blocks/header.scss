@@ -1,3 +1,17 @@
-.page-header {
-  background-color: yellow;
+.main-menu__link {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: #81b3d1;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+    &--item-link {
+      padding: 20px 0;
+    }
 }
+
+.page-header__menu {
+  width: 320px;
+}
+
