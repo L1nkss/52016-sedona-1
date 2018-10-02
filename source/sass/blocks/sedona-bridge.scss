@@ -1,0 +1,36 @@
+.sedona-bridge {
+    min-height: 450px;
+    width: 320px;
+    outline: 1px solid red;
+}
+
+.sedona-bridge__title {
+    @include big-font;
+}
+
+.sedona-bridge__photo {
+    width: 320px;
+    height: 260px;
+}
+
+.sedona-bridge__count {
+    &--count-modif {
+        margin: 18px 0 25px 0;
+    }
+}
+
+.sedona-bridge__info {
+    width: 320px;
+    min-height: 191px;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    &--info-modif {
+        padding: 44px 31px 45px 30px;
+    }
+}

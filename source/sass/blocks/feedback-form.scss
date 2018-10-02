@@ -1,0 +1,14 @@
+.represent__title,
+.contact-info__title,
+.user-impr__title,
+.user-visit__title,
+.user-opinion__title {
+    @include big-font;
+}
+
+::placeholder {
+    @include big-font;
+    color: #000000;
+    background-color: #f1f1f1;
+    text-transform: none;
+}

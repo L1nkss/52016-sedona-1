@@ -1,5 +1,6 @@
 .page-header {
   width: 320px;
+  outline: 1px solid red;
 }
 
 .main-menu__link {
@@ -9,8 +10,7 @@
   background-color: $main-color;
   min-height: 56px;
   width: 320px;
-  font-size: 18px;
-  font-weight: 700;
+  @include big-font;
   color: #ffffff;
     &--item-link {
       padding: 20px 0;

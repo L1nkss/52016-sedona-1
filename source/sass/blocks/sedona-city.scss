@@ -1,6 +1,7 @@
 .sedona-city {
     min-height: 468px;
     width: 320px;
+    outline: 1px solid red;
 }
 
 .sedona-city__info {
@@ -11,23 +12,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     color: #ffffff;
+    &--info-modif {
+        padding: 59px 20px 45px 20px;
+    }
 }
 
 .sedona-city__title {
     @include big-font;
 }
 
-.sedona-city__count {
-    font-size: 14px;
-}
-
-.sedona-city__text {
-    font-size: 14px;
-}
-
 .sedona-city__photo {
     width: 320px;
-    min-height: 260px;
+    height: 260px;
+}
+
+.sedona-city__count {
+    &--count-modif {
+        margin: 18px 0 25px 0;
+    }
 }
