@@ -1,6 +1,7 @@
 .sedona-title__info {
   width: 258px;
   min-height: 70px;
+
   &--title-modif {
     @include big-font;
     margin-bottom: 40px;
@@ -12,6 +13,7 @@
   min-height: 224px;
   text-align: center;
   outline: 1px solid red;
+
   &--title-modif {
     padding: 45px 15px 35px 15px;
   }
