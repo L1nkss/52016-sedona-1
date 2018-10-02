@@ -1,47 +1,47 @@
 /* Шрифты */
 @font-face {
-    font-family: "PT Sans";
-    src: url(../fonts/ptsans.woff) format("woff"),
-        url(../fonts/ptsans.woff2) format("woff2");
-    font-weight: 400;
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff) format("woff"),
+      url(../fonts/ptsans.woff2) format("woff2");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    src: url(../fonts/ptsansbold.woff) format("woff"),
-        url(../fonts/ptsansbold.woff2) format("woff2");
-    font-weight: 700;
+  font-family: "PT Sans";
+  src: url(../fonts/ptsansbold.woff) format("woff"),
+      url(../fonts/ptsansbold.woff2) format("woff2");
+  font-weight: 700;
 }
 
 /* переменные */
 $main-color: #81b3d1;
 
 @mixin big-font {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* Общие настройки */
 * {
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-size: 14px;
-    text-decoration: none;
-    line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 26px;
 }
 
 body {
-    font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .main-content,
 .photo-section {
-    width: 320px;
+  width: 320px;
 }
 
 .button {
-    background-color: $main-color;
+  background-color: $main-color;
 }
