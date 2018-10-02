@@ -1,36 +1,36 @@
 .sedona-city {
-    min-height: 468px;
-    width: 320px;
-    outline: 1px solid red;
+  min-height: 468px;
+  width: 320px;
+  outline: 1px solid red;
 }
 
 .sedona-city__info {
-    width: 320px;
-    min-height: 208px;
-    background-color: $main-color;
-    clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    color: #ffffff;
-    &--info-modif {
-        padding: 59px 20px 45px 20px;
-    }
+  width: 320px;
+  min-height: 208px;
+  background-color: $main-color;
+  clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #ffffff;
+  &--info-modif {
+    padding: 59px 20px 45px 20px;
+  }
 }
 
 .sedona-city__title {
-    @include big-font;
+  @include big-font;
 }
 
 .sedona-city__photo {
-    width: 320px;
-    height: 260px;
+  width: 320px;
+  height: 260px;
 }
 
 .sedona-city__count {
-    &--count-modif {
-        margin: 18px 0 25px 0;
-    }
+  &--count-modif {
+    margin: 18px 0 25px 0;
+  }
 }
