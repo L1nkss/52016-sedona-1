@@ -1,9 +1,14 @@
 .feedback-title {
   @include big-font;
+  margin: 0;
 }
 
 .feedback {
   width: 320px;
   height: 203px;
   text-align: center;
+}
+
+.feedback-text {
+  margin: 0;
 }

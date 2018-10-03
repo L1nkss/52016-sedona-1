@@ -2,6 +2,13 @@
   width: 320px;
   min-height: 243px;
   outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--footer-modif {
+    padding: 42px 0 0 0;
+  }
 }
 
 .page-footer__hash {
@@ -14,4 +21,17 @@
   width: 45px;
   height: 49px;
   background-color: $main-color;
+}
+
+.social {
+  display: flex;
+  margin: 42px 0 51px 0;
+}
+
+.page-footer__made-by {
+  margin: 0;
+}
+
+.social_item--facebook {
+  margin: 0 8px;
 }
