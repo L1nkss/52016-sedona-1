@@ -1,23 +1,23 @@
 /* Общие настройки */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 * {
@@ -36,17 +36,17 @@ a {
 
 /* Шрифты */
 @font-face {
-    font-family: "PT Sans";
-    src:
-        url(../fonts/ptsans.woff) format("woff"),
-        url(../fonts/ptsans.woff2) format("woff2");
-    font-weight: 400;
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    src:
-        url(../fonts/ptsansbold.woff) format("woff"),
-        url(../fonts/ptsansbold.woff2) format("woff2");
-    font-weight: 700;
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 700;
 }
