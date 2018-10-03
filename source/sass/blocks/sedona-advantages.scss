@@ -1,24 +1,24 @@
 .sedona-advantages {
-    width: 320px;
-    min-height: 503px;
-    outline: 1px solid black;
+  width: 320px;
+  min-height: 503px;
+  outline: 1px solid black;
 }
 
 .advantages-item__title {
-    @include big-font;
+  @include big-font;
 }
 
 .sedona-advantages__item {
-    width: 320px;
-    min-height: 167px;
+  width: 320px;
+  min-height: 167px;
 }
 
 .advantages-item {
-    padding: 31px 40px 33px 33px;
-    text-align: center;
+  padding: 31px 40px 33px 33px;
+  text-align: center;
 }
 
 .advantages-item__count {
-    margin: 19px 0 25px 0;
-    display: block;
+  margin: 19px 0 25px 0;
+  display: block;
 }
