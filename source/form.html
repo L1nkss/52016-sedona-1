@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,22 +44,22 @@
       <section class="represent">
         <h4 class="represent__title">Представьтесь:</h4>
         <label for="name">Имя*:
-          <input id="name" type="text" placeholder="Петр" name="user-name">
+          <input class="represent__name-holder" id="name" type="text" placeholder="Петр" name="user-name">
         </label>
         <label for="surname">Фамилия* :
-          <input type="text" id="surname" placeholder="Иванов" name="user-surname">
+          <input class="represent__surname-holder" type="text" id="surname" placeholder="Иванов" name="user-surname">
         </label>
         <label for="patronymic">Отчество*:
-          <input id="patronymic" type="text" placeholder="Александрович" name="user-patronymic">
+          <input class="represent__patron-holder" id="patronymic" type="text" placeholder="Александрович" name="user-patronymic">
         </label>
       </section>
       <section class="contact-info">
         <h4 class="contact-info__title">Контактная информация:</h4>
         <label for="mobile">Контактный телефон*:
-          <input type="tel" id="mobile" placeholder="Введите телефон" name="user-mobile">
+          <input class="contact-info__mobile-holder" type="tel" id="mobile" placeholder="Введите телефон" name="user-mobile">
         </label>
         <label for="email">Электронная почта*:
-          <input type="email" placeholder="Введите e-mail" id="email" name="user-email">
+          <input class="contact-info__email-holder" type="email" placeholder="Введите e-mail" id="email" name="user-email">
         </label>
       </section>
       <section class="user-impr">

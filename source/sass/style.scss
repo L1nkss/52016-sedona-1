@@ -1,5 +1,6 @@
+@import "variables.scss";
 @import "global.scss";
-@import "blocks/header.scss";
+@import "blocks/page-header.scss";
 @import "blocks/sedona-bglogo.scss";
 @import "blocks/sedona-title.scss";
 @import "blocks/sedona-city.scss";
@@ -11,4 +12,4 @@
 @import "blocks/page-footer.scss";
 @import "blocks/feedback.scss";
 @import "blocks/feedback-form.scss";
-@import "blocks/photo-info.scss";
+@import "blocks/card-list.scss";

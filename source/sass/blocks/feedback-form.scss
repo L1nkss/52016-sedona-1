@@ -6,7 +6,11 @@
     @include big-font;
 }
 
-::placeholder {
+.contact-info__mobile-holder::placeholder,
+.contact-info__email-holder::placeholder,
+.represent__name-holder::placeholder,
+.represent__surname-holder::placeholder,
+.represent__patron-holder::placeholder {
     @include big-font;
     color: #000000;
     background-color: #f1f1f1;
