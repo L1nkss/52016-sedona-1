@@ -3,6 +3,11 @@
   outline: 1px solid red;
 }
 
+.main-menu__menu-list {
+  margin: 0;
+  padding: 0;
+}
+
 .main-menu__link {
   @include big-font;
   text-decoration: none;
