@@ -1,0 +1,15 @@
+.social__item {
+  display: block;
+  width: 45px;
+  height: 49px;
+  background-color: $main-color;
+}
+
+.social {
+  display: flex;
+  margin: 42px 0 51px 0;
+}
+
+.social_item--facebook {
+  margin: 0 8px;
+}

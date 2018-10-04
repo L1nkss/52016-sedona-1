@@ -1,0 +1,21 @@
+.card-item {
+  width: 320px;
+  min-height: 410px;
+}
+
+.card-item__photo {
+  width: 280px;
+  height: 279px;
+}
+
+.card-item__name {
+  font-weight: 700;
+}
+
+.card-item__autor {
+  text-transform: none;
+}
+
+.card-item__count-like {
+  font-weight: 700;
+}

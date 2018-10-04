@@ -1,0 +1,19 @@
+.user-opinion__title {
+  @include big-font;
+  margin: 0;
+}
+
+.user-opinion__text::placeholder {
+  @include big-font;
+  color: #000000;
+  background-color: $main-form-color;
+  text-transform: none;
+  padding-left: 21px;
+}
+
+.user-opinion__text {
+  width: 280px;
+  height: 160px;
+  resize: none;
+  background-color: $main-form-color;
+}

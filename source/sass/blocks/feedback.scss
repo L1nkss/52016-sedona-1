@@ -1,0 +1,14 @@
+.feedback__title {
+  @include big-font;
+  margin: 0;
+}
+
+.feedback {
+  width: 320px;
+  height: 203px;
+  text-align: center;
+}
+
+.feedback__text {
+  margin: 0;
+}

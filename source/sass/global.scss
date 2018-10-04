@@ -1,0 +1,49 @@
+/* Общие настройки */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content,
+.photo-section {
+  width: 320px;
+}
+
+.button {
+  background-color: $main-color;
+}
+
+/* Шрифты */
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 700;
+}

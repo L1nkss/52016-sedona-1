@@ -1,0 +1,15 @@
+.feedback-form {
+  padding: 0 20px;
+  outline: 1px solid black;
+  width: 320px;
+
+  &--button {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    width: 280px;
+    min-height: 58px;
+    text-align: center;
+  }
+}
