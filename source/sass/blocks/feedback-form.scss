@@ -1,90 +1,15 @@
-.represent__title,
-.contact-info__title,
-.user-impr__title,
-.user-visit__title,
-.user-opinion__title {
-  @include big-font;
-  margin: 0;
-}
-
-.contact-info__mobile-holder::placeholder,
-.contact-info__email-holder::placeholder,
-.represent__name-holder::placeholder,
-.represent__surname-holder::placeholder,
-.represent__patron-holder::placeholder,
-.user-opinion__text {
-  @include big-font;
-  color: #000000;
-  background-color: $main-form-color;
-  text-transform: none;
-  padding-left: 21px;
-}
-
-.user-impr {
-  text-transform: none;
-}
-
-.user-visit {
-  text-transform: none;
-}
-
-.user-opinion__text {
-  width: 280px;
-  height: 160px;
-  resize: none;
-}
-
-.button--feedback {
-  font-size: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  display: block;
-  width: 280px;
-  min-height: 58px;
-  text-align: center;
-}
-
 .feedback-form {
   padding: 0 20px;
   outline: 1px solid black;
   width: 320px;
-}
 
-.contact-info__mobile-holder,
-.contact-info__email-holder {
-  display: block;
-  padding: 20px 0;
-  width: 280px;
-  background-color: $main-form-color;
-  border: 0;
-}
-
-.represent__name-holder {
-  padding: 20px 0 18px 0;
-  line-height: 26px;
-  border: 0;
-  background-color: $main-form-color;
-  width: 230px;
-  margin-bottom: 20px;
-}
-
-.represent__surname-holder {
-  line-height: 26px;
-  padding: 20px 0 20px 0;
-  background-color: $main-form-color;
-  border: 0;
-  margin-bottom: 23px;
-  width: 191px;
-}
-
-.represent__patron-holder {
-  line-height: 26px;
-  background-color: $main-form-color;
-  border: 0;
-  width: 192px;
-  padding: 22px 0 21px 0;
-}
-
-.represent {
-  width: 280px;
+  &--button {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    width: 280px;
+    min-height: 58px;
+    text-align: center;
+  }
 }

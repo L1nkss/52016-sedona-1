@@ -1,0 +1,26 @@
+.main-menu__menu-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-menu__link {
+    @include big-font;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: $main-color;
+    border-bottom: 1px solid black;
+    min-height: 56px;
+    width: 320px;
+    color: #ffffff;
+
+    &--item-link {
+      padding: 20px 0;
+    }
+  }
+
+  .main-menu__menu-item {
+    min-height: 56px;
+    width: 320px;
+    list-style: none;
+  }
