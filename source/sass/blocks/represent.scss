@@ -1,44 +1,44 @@
 .represent {
-    width: 280px;
-  }
+  width: 280px;
+}
 
 .represent__title {
-    @include big-font;
-    margin: 0;
+  @include big-font;
+  margin: 0;
 }
 
 .represent__name-holder::placeholder,
 .represent__surname-holder::placeholder,
 .represent__patron-holder::placeholder {
-    @include big-font;
-    color: #000000;
-    background-color: $main-form-color;
-    text-transform: none;
-    padding-left: 21px;
+  @include big-font;
+  color: #000000;
+  background-color: $main-form-color;
+  text-transform: none;
+  padding-left: 21px;
 }
 
 .represent__name-holder {
-    padding: 20px 0 18px 0;
-    line-height: 26px;
-    border: 0;
-    background-color: $main-form-color;
-    width: 230px;
-    margin-bottom: 20px;
-  }
+  padding: 20px 0 18px 0;
+  line-height: 26px;
+  border: 0;
+  background-color: $main-form-color;
+  width: 230px;
+  margin-bottom: 20px;
+}
 
 .represent__surname-holder {
-    line-height: 26px;
-    padding: 20px 0 20px 0;
-    background-color: $main-form-color;
-    border: 0;
-    margin-bottom: 23px;
-    width: 191px;
-  }
+  line-height: 26px;
+  padding: 20px 0 20px 0;
+  background-color: $main-form-color;
+  border: 0;
+  margin-bottom: 23px;
+  width: 191px;
+}
 
 .represent__patron-holder {
-    line-height: 26px;
-    background-color: $main-form-color;
-    border: 0;
-    width: 192px;
-    padding: 22px 0 21px 0;
-  }
+  line-height: 26px;
+  background-color: $main-form-color;
+  border: 0;
+  width: 192px;
+  padding: 22px 0 21px 0;
+}

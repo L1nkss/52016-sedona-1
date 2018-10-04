@@ -1,13 +1,13 @@
 .advantages-item {
-    padding: 31px 40px 33px 33px;
-    text-align: center;
-  }
+  padding: 31px 40px 33px 33px;
+  text-align: center;
+}
 
 .advantages-item__count {
-    margin: 19px 0 25px 0;
-    display: block;
-  }
+  margin: 19px 0 25px 0;
+  display: block;
+}
 
 .advantages-item__title {
-    @include big-font;
-  }
+  @include big-font;
+}

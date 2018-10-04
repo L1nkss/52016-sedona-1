@@ -1,15 +1,15 @@
 .contact-info__title {
-    @include big-font;
-    margin: 0;
+  @include big-font;
+  margin: 0;
 }
 
 .contact-info__mobile-holder::placeholder,
 .contact-info__email-holder::placeholder {
-    @include big-font;
-    color: #000000;
-    background-color: $main-form-color;
-    text-transform: none;
-    padding-left: 21px;
+  @include big-font;
+  color: #000000;
+  background-color: $main-form-color;
+  text-transform: none;
+  padding-left: 21px;
 }
 
 .contact-info__mobile-holder,
