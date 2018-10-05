@@ -1,0 +1,37 @@
+.video-info {
+  min-width: 320px;
+
+  &--info-modif {
+    padding: 0 20px;
+  }
+}
+
+.video-info__descr {
+  min-width: 280px;
+  min-height: 192px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-info__title {
+  margin: 0 auto;
+}
+
+.video-info__text {
+  min-width: 242px;
+  min-height: 65px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .video-info__descr {
+    min-width: 648px;
+    min-height: 245px;
+    align-items: center;
+  }
+
+  .video-info__text {
+    width: 430px;
+    min-height: 50px;
+  }
+}

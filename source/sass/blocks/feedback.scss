@@ -1,14 +1,21 @@
 .feedback__title {
   @include big-font;
-  margin: 0;
+  width: 210px;
+  margin: 0 auto;
 }
 
 .feedback {
-  width: 320px;
+  min-width: 320px;
   height: 203px;
   text-align: center;
+
+  &--feedback-modif {
+    padding: 45px 20px 20px 20px;
+  }
 }
 
 .feedback__text {
-  margin: 0;
+  width: 280px;
+  min-height: 105px;
+  margin: 0 auto;
 }

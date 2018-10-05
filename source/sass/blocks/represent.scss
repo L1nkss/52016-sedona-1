@@ -1,11 +1,29 @@
 .represent {
-  width: 280px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  border-bottom: 1px solid black;
+
+  &--represent-modif {
+    padding: 20px 20px 25px 20px;
+  }
 }
 
 .represent__title {
   @include big-font;
-  margin: 0;
+  margin: 0 auto;
+  width: 140px;
 }
+
+.represent__info {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
 
 .represent__name-holder::placeholder,
 .represent__surname-holder::placeholder,
@@ -18,12 +36,11 @@
 }
 
 .represent__name-holder {
+  flex: 1;
   padding: 20px 0 18px 0;
   line-height: 26px;
   border: 0;
   background-color: $main-form-color;
-  width: 230px;
-  margin-bottom: 20px;
 }
 
 .represent__surname-holder {
@@ -31,14 +48,21 @@
   padding: 20px 0 20px 0;
   background-color: $main-form-color;
   border: 0;
-  margin-bottom: 23px;
-  width: 191px;
+  flex: 1;
 }
 
 .represent__patron-holder {
   line-height: 26px;
   background-color: $main-form-color;
   border: 0;
-  width: 192px;
+  flex: 1;
   padding: 22px 0 21px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .represent {
+    width: 325px;
+    min-height: 305px;
+    border: 0;
+  }
 }

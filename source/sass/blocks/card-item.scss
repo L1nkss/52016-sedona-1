@@ -1,6 +1,8 @@
 .card-item {
-  width: 320px;
+  min-width: 280px;
   min-height: 410px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-item__photo {
@@ -18,4 +20,11 @@
 
 .card-item__count-like {
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .card-item {
+    min-width: 324px;
+    min-height: 347px;
+  }
 }

@@ -1,4 +1,20 @@
 .page-header {
-  width: 320px;
+  min-width: 320px;
   outline: 1px solid red;
+  min-height: 280px;
+}
+
+.page-header__menu {
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-width: $tablet-width;
+    min-height: 56px;
+  }
+
+  .page-header__menu {
+    min-width: $tablet-width;
+  }
 }

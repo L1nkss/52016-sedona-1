@@ -1,10 +1,12 @@
 .sedona-list {
   min-height: 415px;
-  width: 320px;
+  min-width: 320px;
   outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
 
   &--list-modif {
-    padding: 40px 40px 42px 70px;
+    padding: 40px 20px 42px 20px;
   }
 }
 
@@ -13,6 +15,32 @@
 }
 
 .sedona-list__item {
-  width: 217px;
+  min-width: 280px;
   min-height: 110px;
+
+  &--item-modif {
+    padding: 0 20px 0 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-list {
+    flex-direction: row;
+    min-width: 768px;
+    min-height: 256px;
+
+    &--list-modif {
+      padding: 0;
+    }
+  }
+
+  .sedona-list__item {
+    min-width: 256px;
+    min-height: 330px;
+    text-align: center;
+
+    &--item-modif {
+      padding: 160px 50px 65px 42px;
+    }
+  }
 }

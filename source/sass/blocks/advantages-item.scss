@@ -1,6 +1,7 @@
 .advantages-item {
-  padding: 31px 40px 33px 33px;
   text-align: center;
+  margin: 0;
+  padding: 20px 15px 30px 15px;
 }
 
 .advantages-item__count {
@@ -10,4 +11,21 @@
 
 .advantages-item__title {
   @include big-font;
+  margin: 0;
+}
+
+.advantages-item__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-item {
+    padding: 50px 45px 45px 45px;
+  }
+
+  .advantages-item__title {
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+  }
 }

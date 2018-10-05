@@ -13,3 +13,9 @@
 .social_item--facebook {
   margin: 0 8px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+  }
+}

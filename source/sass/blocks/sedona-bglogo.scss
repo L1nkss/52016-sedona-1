@@ -3,12 +3,23 @@
   background-color: $main-color;
   background-position: center center;
   background-repeat: no-repeat;
-  outline: 1px solid red;
-  width: 320px;
+  background-size: cover;
+  min-width: 320px;
   height: 390px;
 
   &--form-back {
-    width: 320px;
-    height: 157px;
+    min-width: 320px;
+    height: 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-bglogo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &--form-back {
+      min-width: 768px;
+      height: 290px;
+    }
   }
 }

@@ -1,10 +1,29 @@
 .sedona-advantages {
-  width: 320px;
+  min-width: 320px;
   min-height: 503px;
   outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  &--advantages-modif {
+    padding: 0 20px;
+  }
 }
 
 .sedona-advantages__item {
-  width: 320px;
-  min-height: 167px;
+  min-width: 280px;
+  min-height: 168px;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-advantages {
+    flex-direction: row;
+    min-height: 257px;
+    min-width: 768px;
+  }
+
+  .sedona-advantages__item {
+    min-width: 256px;
+    min-height: 256px;
+  }
 }

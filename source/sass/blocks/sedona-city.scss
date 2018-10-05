@@ -1,11 +1,13 @@
 .sedona-city {
   min-height: 468px;
-  width: 320px;
+  min-width: 320px;
   outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .sedona-city__info {
-  width: 320px;
+  min-width: 320px;
   min-height: 208px;
   background-color: $main-color;
   clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -23,15 +25,58 @@
 
 .sedona-city__title {
   @include big-font;
+  margin: 0;
 }
 
 .sedona-city__photo {
-  width: 320px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-color: $main-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 320px;
   height: 260px;
 }
 
 .sedona-city__count {
   &--count-modif {
-    margin: 18px 0 25px 0;
+    margin: 18px 0 21px 0;
+  }
+}
+
+.sedona-city__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-city {
+    flex-direction: row;
+    min-height: 256px;
+  }
+
+  .sedona-city__info {
+    clip-path: none;
+    min-width: 256px;
+    min-height: 256px;
+
+    &--info-modif {
+      padding: 0;
+    }
+  }
+
+  .sedona-city__photo {
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    min-width: 512px;
+    flex-grow: 1;
+  }
+
+  .sedona-city__text {
+    width: 170px;
+    min-height: 65px;
+  }
+
+  .sedona-city__title {
+    width: 140px;
+    height: 45px;
   }
 }

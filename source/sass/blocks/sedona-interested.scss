@@ -1,5 +1,5 @@
 .sedona-interested {
-  width: 320px;
+  min-width: 320px;
   min-height: 287px;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@
 .sedona-interested__title {
   font-size: 21px;
   font-weight: 700;
+  margin: 0;
 }
 
 .sedona-interested__button {
@@ -20,7 +21,7 @@
   font-weight: 700;
   color: #ffffff;
   display: block;
-  width: 280px;
+  min-width: 280px;
   min-height: 58px;
   text-align: center;
   padding: 18px 0 20px 0;
@@ -29,4 +30,15 @@
 .sedona-interested__text {
   text-align: center;
   margin: 30px 0 42px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-interested__text {
+    width: 445px;
+    min-height: 45px;
+  }
+
+  .sedona-interested__button {
+    width: 457px;
+  }
 }
