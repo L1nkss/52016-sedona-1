@@ -1,0 +1,50 @@
+.video-player {
+  width: 320px;
+  height: 200px;
+
+  &--video-player-modif {
+    padding: 0;
+  }
+}
+
+.video-player__window {
+  width: 320px;
+  height: 200px;
+  background-image: url("../../img/video-mobile@1x.jpg");
+}
+
+@media (min-width: $tablet-width) {
+  .video-player {
+    min-width: 768px;
+    min-height: 500px;
+
+    &--video-player-modif {
+      padding: 0 60px;
+    }
+
+    .video-player__window {
+      width: 648px;
+      height: 500px;
+      background-image: url("../../img/video-tablet@1x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-player {
+    width: 1200px;
+    height: 500px;
+
+    &--video-player-modif {
+      padding: 0;
+    }
+  }
+
+  .video-player__window {
+    width: 800px;
+    display: block;
+    height: 500px;
+    background-image: url("../../img/video-desktop@1x.jpg");
+    margin: 0 auto;
+  }
+}

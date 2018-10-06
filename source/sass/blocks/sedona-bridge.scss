@@ -1,7 +1,6 @@
 .sedona-bridge {
   min-height: 450px;
   min-width: 320px;
-  outline: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +26,7 @@
 
 .sedona-bridge__count {
   &--count-modif {
-    margin: 18px 0 25px 0;
+    margin: 15px 0 15px 0;
   }
 }
 
@@ -41,10 +40,6 @@
   flex-direction: column;
   text-align: center;
   color: #ffffff;
-
-  &--info-modif {
-    padding: 44px 31px 45px 30px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,11 +66,30 @@
 
   .sedona-bridge__title {
     width: 160px;
-    height: 60px;
+    height: 50px;
   }
 
   .sedona-bridge__text {
     width: 165px;
     min-height: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-bridge {
+    width: 1200px;
+    min-height: 256px;
+  }
+
+  .sedona-bridge__photo {
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
+  }
+
+  .sedona-bridge__info {
+    width: 400px;
+  }
+
+  .sedona-bridge__text {
+    width: 225px;
   }
 }

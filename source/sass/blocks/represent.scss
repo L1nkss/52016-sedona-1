@@ -5,6 +5,7 @@
   align-items: center;
   border: 0;
   border-bottom: 1px solid black;
+  margin: 0;
 
   &--represent-modif {
     padding: 20px 20px 25px 20px;
@@ -41,6 +42,7 @@
   line-height: 26px;
   border: 0;
   background-color: $main-form-color;
+  margin-left: 10px;
 }
 
 .represent__surname-holder {
@@ -49,6 +51,7 @@
   background-color: $main-form-color;
   border: 0;
   flex: 1;
+  margin-left: 12px;
 }
 
 .represent__patron-holder {
@@ -57,12 +60,18 @@
   border: 0;
   flex: 1;
   padding: 22px 0 21px 0;
+  margin-left: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .represent {
-    width: 325px;
+    width: 324px;
     min-height: 305px;
     border: 0;
+    flex-grow: 1;
+
+    &--represent-modif {
+      padding: 0;
+    }
   }
 }

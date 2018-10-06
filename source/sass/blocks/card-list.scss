@@ -1,23 +1,17 @@
 .card-list {
   min-width: 320px;
-
-  &--list-modif {
-    padding: 0 20px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
   .card-list {
-    display: flex;
     min-width: 768px;
     flex-wrap: wrap;
+    flex-direction: row;
 
     &--list-modif {
-      padding: 0 60px;
-    }
-
-    & :first-child {
-      min-width: 648px;
+      padding: 0;
     }
   }
 }

@@ -9,6 +9,7 @@
   border: 0;
   min-width: 320px;
   display: flex;
+  margin: 0;
 
   &--impr-modif {
     padding: 20px 20px 0 20px;
@@ -18,9 +19,14 @@
 
 @media (min-width: $tablet-width) {
   .user-impr {
-    width: 325px;
+    width: 324px;
     min-height: 305px;
     order: -1;
+    flex-grow: 1;
+
+    &--impr-modif {
+      padding: 0;
+    }
   }
 }
 

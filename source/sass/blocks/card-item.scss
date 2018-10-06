@@ -1,8 +1,12 @@
 .card-item {
   min-width: 280px;
   min-height: 410px;
+  flex-basis: 320px;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .card-item__photo {
@@ -24,7 +28,21 @@
 
 @media (min-width: $tablet-width) {
   .card-item {
-    min-width: 324px;
-    min-height: 347px;
+    &:first-child {
+      min-width: 768px;
+      padding: 0;
+
+      .card-item__photo {
+        min-width: 768px;
+      }
+
+      .card-item__info {
+        min-width: 768px;
+      }
+    }
+  }
+
+  .card-item__photo {
+    flex: 1;
   }
 }

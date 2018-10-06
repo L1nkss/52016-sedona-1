@@ -1,9 +1,5 @@
 .video-info {
   min-width: 320px;
-
-  &--info-modif {
-    padding: 0 20px;
-  }
 }
 
 .video-info__descr {
@@ -11,6 +7,7 @@
   min-height: 192px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .video-info__title {

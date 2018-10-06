@@ -5,23 +5,27 @@
 
   &--title-modif {
     @include big-font;
-    margin-bottom: 40px;
   }
 }
 
 .sedona-title {
-  min-width: 320px;
+  min-width: 280px;
   min-height: 224px;
   text-align: center;
-  outline: 1px solid red;
 
   &--title-modif {
-    padding: 46px 20px 35px 20px;
+    padding-top: 40px;
+    padding-bottom: 35px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .sedona-title__info {
     width: 465px;
+  }
+
+  .sedona-title {
+    min-width: 648px;
+    min-height: 205px;
   }
 }
