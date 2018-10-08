@@ -1,18 +1,67 @@
 .sedona-list {
   min-height: 415px;
-  width: 320px;
-  outline: 1px solid red;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
 
   &--list-modif {
-    padding: 40px 40px 42px 70px;
+    padding-bottom: 42px;
+    padding-top: 40px;
   }
+}
+
+.sedona-list__text {
+  margin: 0;
 }
 
 .sedona-list__title {
   @include big-font;
+  margin: 0;
 }
 
 .sedona-list__item {
-  width: 217px;
   min-height: 110px;
+
+  &--item-modif {
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-list {
+    flex-direction: row;
+    min-width: 768px;
+    min-height: 256px;
+
+    &--list-modif {
+      padding: 0;
+    }
+  }
+
+  .sedona-list__text {
+    width: 170px;
+    height: 70px;
+  }
+
+  .sedona-list__item {
+    flex-basis: 256px;
+    min-height: 330px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--item-modif {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-list__text {
+    width: 280px;
+    height: 70px;
+  }
 }

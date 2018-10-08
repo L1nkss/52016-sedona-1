@@ -1,7 +1,6 @@
 .page-footer {
-  width: 320px;
+  min-width: 320px;
   min-height: 243px;
-  outline: 1px solid red;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -18,4 +17,17 @@
 
 .page-footer__made-by {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 120px;
+    min-width: 768px;
+
+    &--footer-modif {
+      padding: 0;
+    }
+  }
 }

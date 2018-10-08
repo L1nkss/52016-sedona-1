@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="css/normalize.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -22,11 +22,12 @@
           <a class="main-menu__link main-menu__link--item-link" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-menu__menu-item">
-          <a class="main-menu__link main-menu__link--item-link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          <a class="main-menu__link main-menu__link--item-link" href="https://htmlacademy.ru/intensive/adaptive">html
+            academy</a>
         </li>
-        <li class="main-menu__menu-item">
-          <img class="main-menu_logo" src="http://placehold.it/150x100" alt="Седона Логотип">
-          <button class="main-menu__button-toggle" type="button"></button>
+        <!-- <li class="main-menu__menu-item">
+         -- <img class="main-menu_logo" src="http://placehold.it/150x100" alt="Седона Логотип">
+          <button class="main-menu__button-toggle" type="button"></button> -->
         </li>
       </ul>
     </nav>
@@ -34,49 +35,59 @@
   <section class="sedona-bglogo sedona-bglogo--form-back">
     <span class="sedona-bglogo__title">sedona</span>
   </section>
-  <section class="photo-info">
+  <section class="photo-info photo-info--photo-modif">
     <h1 class="photo-info__title">фото и видео</h1>
     <p class="photo-info__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
       и экономике.</p>
   </section>
-  <main class="photo-section">
-    <section class="card-list">
-      <div class="card-item">
-        <img class="card-item__photo" src="http://placehold.it/150x100" alt="Дорога в закате">
+  <section class="card-list card-list--list-modif">
+    <div class="card-item wrapper">
+      <img class="card-item__photo" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+      <div class="card-item__info">
         <p class="card-item__name">Неродные просторы</p>
         <span class="card-item__autor">Автор фото:Борис</span>
         <span class="card-item__count-like">1350</span>
       </div>
+    </div>
 
-      <div class="card-item">
-        <img class="card-item__photo" src="http://placehold.it/150x100" alt="Растительность в Седоне">
+    <div class="card-item wrapper">
+      <img class="card-item__photo" src="img/photo-cactus-mobile@1x.jpg" alt="Растительность в Седоне">
+      <div>
         <p class="card-item__name">Местная растительность</p>
         <span class="card-item__autor">Автор фото:Сергей</span>
         <span class="card-item__count-like">143</span>
       </div>
+    </div>
 
-      <div class="card-item">
-        <img class="card-item__photo" src="http://placehold.it/150x100" alt="Дорога на север">
+    <div class="card-item wrapper">
+      <img class="card-item__photo" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+      <div>
         <p class="card-item__name">Дорога на север</p>
         <span class="card-item__autor">Автор фото:Петр</span>
         <span class="card-item__count-like">96</span>
       </div>
+    </div>
 
-      <div class="card-item">
-        <img class="card-item__photo" src="http://placehold.it/150x100" alt="Мост Дьявола">
+    <div class="card-item wrapper">
+      <img class="card-item__photo" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+      <div>
         <p class="card-item__name">Мост дьявола</p>
         <span class="card-item__autor">Автор фото:Антон</span>
         <span class="card-item__count-like">254</span>
       </div>
-    </section>
-    <section class="video-info">
+    </div>
+  </section>
+  <section class="video-info wrapper">
+    <div class="video-info__descr">
       <h4 class="video-info__title">Все ещё сомневаетесь?</h4>
       <p class="video-info__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
         раз!</p>
-      <!-- Видео -->
-    </section>
+    </div>
+  </section>
+  <section class="video-player video-player--video-player-modif">
+    <video class="video-player__window"></video>
+  </section>
 
-  </main>
   <footer class="page-footer">
     <h4 class="page-footer__hash">#Visitsedona</h4>
     <div class="page-footer_social social">

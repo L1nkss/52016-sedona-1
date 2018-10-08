@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="css/normalize.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -25,78 +25,98 @@
           <a class="main-menu__link main-menu__link--item-link" href="https://htmlacademy.ru/intensive/adaptive">html
             academy</a>
         </li>
-        <li class="main-menu__menu-item">
+        <!-- <li class="main-menu__menu-item">
           <img class="main-menu_logo" src="http://placehold.it/150x100" alt="Седона Логотип">
           <button class="main-menu__button-toggle" type="button"></button>
-        </li>
+        </li>-->
       </ul>
     </nav>
   </header>
-  <main class="main-content">
     <section class="sedona-bglogo sedona-bglogo--form-back">
       <span class="sedona-bglogo__title">sedona</span>
     </section>
-    <section class="feedback">
+    <section class="feedback feedback--feedback-modif">
       <h4 class="feedback__title">Оставьте свой отзыв</h4>
       <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами
         достопримечательностях</p>
     </section>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <section class="represent">
+
+      <fieldset class="represent represent--represent-modif">
         <h4 class="represent__title">Представьтесь:</h4>
-        <label for="name">Имя*:
-          <input class="represent__name-holder" id="name" type="text" placeholder="Петр" name="user-name">
-        </label>
-        <label for="surname">Фамилия* :
-          <input class="represent__surname-holder" type="text" id="surname" placeholder="Иванов" name="user-surname">
-        </label>
-        <label for="patronymic">Отчество*:
-          <input class="represent__patron-holder" id="patronymic" type="text" placeholder="Александрович" name="user-patronymic">
-        </label>
-      </section>
-      <section class="contact-info">
+        <div class="represent__info">
+            <label for="name">Имя*:</label>
+            <input class="represent__name-holder" id="name" type="text" placeholder="Петр" name="user-name">
+        </div>
+        <div class="represent__info">
+            <label for="surname">Фамилия*:</label>
+            <input class="represent__surname-holder" id="surname" type="text" placeholder="Иванов" name="user-surname">
+        </div>
+        <div class="represent__info">
+            <label for="patronymic">Отчество*:</label>
+            <input class="represent__patron-holder" id="patronymic" type="text" placeholder="Александрович" name="user-patronymic">
+        </div>
+      </fieldset>
+
+      <fieldset class="contact-info contact-info--contact-modif">
         <h4 class="contact-info__title">Контактная информация:</h4>
-        <label for="mobile">Контактный телефон*:
-          <input class="contact-info__mobile-holder" type="tel" id="mobile" placeholder="Введите телефон" name="user-mobile">
-        </label>
-        <label for="email">Электронная почта*:
-          <input class="contact-info__email-holder" type="email" placeholder="Введите e-mail" id="email" name="user-email">
-        </label>
-      </section>
-      <section class="user-impr">
+        <div class="contact-info__date">
+            <label for="mobile">Контактный телефон*:</label>
+            <input class="contact-info__mobile-holder" type="tel" id="mobile" placeholder="Введите телефон" name="user-mobile">
+        </div>
+        <div class="contact-info__date">
+            <label for="email">Электронная почта*:</label>
+            <input class="contact-info__email-holder" type="email" id="email" placeholder="Введите e-mail" name="user-email">
+        </div>
+      </fieldset>
+
+      <fieldset class="user-impr user-impr--impr-modif">
         <h4 class="user-impr__title">Ваше общее впечатление:</h4>
-        <input type="radio" name="impr" value="Good" id="good-impr" checked>
-        <label for="good-impr">Скорее положительное</label>
-        <input type="radio" name="impr" value="Bad" id="bad-impr">
-        <label for="bad-impr">Скорее отрицательное</label>
-        <input type="radio" name="impr" value="idk" id="idk-impr">
-        <label for="idk-impr">Затрудняюсь ответить</label>
-      </section>
-      <section class="user-visit">
+        <label class="user-impr__radio-ch" for="good-impr">
+            <input type="radio" name="impr" value="Good" id="good-impr" checked>
+            Скорее положительное
+          </label>
+          <label class="user-impr__radio-ch" for="bad-impr">
+            <input type="radio" name="impr" value="Bad" id="bad-impr">
+            Скорее отрицательное
+          </label>
+          <label class="user-impr__radio-ch" for="idk-impr">
+            <input type="radio" name="impr" value="idk" id="idk-impr">
+            Затрудняюсь ответить
+          </label>
+      </fieldset>
+
+      <fieldset class="user-visit">
         <h4 class="user-visit__title">Посещенные достопримечательности</h4>
+        <label class="user-visit__checkbox-ch" for="bridge">
+            <input type="checkbox" name="places" id="bridge" value="bridge" checked>
+            Мост Дьявола
+          </label>
+          <label class="user-visit__checkbox-ch" for="mount">
+            <input type="checkbox" name="places" id="mount" value="mount" checked>
+            Гора-Колокол
+          </label>
+          <label class="user-visit__checkbox-ch" for="park">
+            <input type="checkbox" name="places" id="park" value="park" checked>
+            Слайд-парк
+          </label>
+          <label class="user-visit__checkbox-ch" for="cliffs">
+            <input type="checkbox" name="places" id="cliffs" value="cliffs">
+            Красные скалы
+          </label>
+      </fieldset>
 
-        <input type="checkbox" name="places" id="bridge" value="bridge" checked>
-        <label for="bridge">Мост Дьявола</label>
-
-        <input type="checkbox" name="places" id="mount" value="mount" checked>
-        <label for="mount">Гора-Колокол</label>
-
-        <input type="checkbox" name="places" id="park" value="park" checked>
-        <label for="park">Слайд-парк</label>
-
-        <input type="checkbox" name="places" id="cliffs" value="cliffs">
-        <label for="cliffs">Красные скалы</label>
-
-      </section>
-      <section class="user-opinion">
+      <fieldset class="user-opinion user-opinion--opinion-modif">
         <h4 class="user-opinion__title">Опишите свои эмоции</h4>
         <textarea class="user-opinion__text" placeholder="Опишите подробно все свои восторги" name="opinion"></textarea>
-      </section>
-      <input class="button feedback-form--button" type="submit">
-
+      </fieldset>
+    <!--   <fieldset class="form-button form-button--form-button-modif">
+        <input class="button feedback-form--button" type="submit">
+        <span class="hidden-text">* — обязательные поля</span>
+      </fieldset>
+    -->
     </form>
 
-  </main>
   <footer class="page-footer">
     <h4 class="page-footer__hash">#Visitsedona</h4>
     <div class="page-footer_social social">

@@ -1,6 +1,8 @@
 .advantages-item {
-  padding: 31px 40px 33px 33px;
-  text-align: center;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .advantages-item__count {
@@ -10,4 +12,34 @@
 
 .advantages-item__title {
   @include big-font;
+  margin: 0;
+}
+
+.advantages-item__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-item {
+    padding: 0;
+    align-items: center;
+  }
+
+  .advantages-item__title {
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .advantages-item__text {
+    width: 165px;
+    min-height: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-item__text {
+    width: 300px;
+    height: 50px;
+  }
 }

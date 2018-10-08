@@ -1,8 +1,35 @@
 .user-visit__title {
   @include big-font;
-  margin: 0;
+  margin: 0 auto;
+  width: 245px;
+  height: 45px;
+  text-align: center;
 }
 
 .user-visit {
   text-transform: none;
+  min-width: 320px;
+  border: 0;
+}
+
+.user-visit__checkbox-ch {
+  display: block;
+}
+
+
+@media (min-width: $tablet-width) {
+  .user-visit {
+    min-width: 648px;
+  }
+
+  .user-visit__checkbox-ch {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-visit__checkbox-ch {
+    display: inline-block;
+    width: 250px;
+  }
 }

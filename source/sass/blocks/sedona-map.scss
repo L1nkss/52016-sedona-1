@@ -1,6 +1,20 @@
 .sedona-map {
   height: 350px;
-  width: 320px;
+  min-width: 320px;
   background-color: #58e000;
   background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
 }

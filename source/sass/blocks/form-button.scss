@@ -1,0 +1,21 @@
+.form-button {
+  min-width: 320px;
+  border: 0;
+  margin: 0;
+
+  &--form-button-modif {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hidden-text {
+    display: block;
+    width: 165px;
+  }
+
+  .form-button {
+    min-width: $tablet-width;
+    display: flex;
+  }
+}
