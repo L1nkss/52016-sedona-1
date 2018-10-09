@@ -55,6 +55,12 @@
     min-width: 768px;
   }
 
+  .sedona-city__count {
+    &--count-modif {
+      margin: 10px auto 27px auto;
+    }
+  }
+
   .sedona-city__info {
     clip-path: none;
     width: 256px;
@@ -63,7 +69,7 @@
     flex-direction: column;
 
     &--info-modif {
-      padding: 40px;
+      padding: 46px;
     }
   }
 
@@ -82,6 +88,8 @@
   .sedona-city__title {
     width: 140px;
     height: 45px;
+    line-height: 26px;
+    font-size: 21px;
     margin: 0 auto;
   }
 }

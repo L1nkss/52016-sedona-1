@@ -6,7 +6,7 @@
   flex-direction: column;
 
   &--footer-modif {
-    padding: 42px 0 0 0;
+    padding: 35px 0 0 0;
   }
 }
 
@@ -16,7 +16,8 @@
 }
 
 .page-footer__made-by {
-  margin: 0;
+  text-align: center;
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {

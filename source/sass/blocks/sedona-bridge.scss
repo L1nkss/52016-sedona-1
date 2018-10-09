@@ -8,6 +8,7 @@
 .sedona-bridge__title {
   @include big-font;
   margin: 0;
+  margin-top: 37px;
 }
 
 .sedona-bridge__photo {
@@ -21,12 +22,17 @@
 }
 
 .sedona-bridge__text {
+  line-height: 21px;
   margin: 0;
 }
 
 .sedona-bridge__count {
+  width: 60px;
+  height: 20px;
+  display: block;
+
   &--count-modif {
-    margin: 15px 0 15px 0;
+    margin: 6px auto 20px auto;
   }
 }
 
@@ -34,10 +40,6 @@
   min-width: 280px;
   min-height: 191px;
   background-color: $main-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
   color: #ffffff;
 }
@@ -51,6 +53,7 @@
 
   .sedona-bridge__photo {
     background-image: url("../img/main-bridge-tablet@1x.jpg");
+    height: 256px;
     min-width: 512px;
     flex-grow: 1;
   }
@@ -61,17 +64,27 @@
 
     &--info-modif {
       padding: 0;
+      padding-top: 45px;
+    }
+  }
+
+  .sedona-bridge__count {
+    &--count-modif {
+      margin: 8px auto 26px auto;
     }
   }
 
   .sedona-bridge__title {
-    width: 160px;
+    width: 151px;
     height: 50px;
+    font-size: 21px;
+    margin: 0 auto;
   }
 
   .sedona-bridge__text {
     width: 165px;
     min-height: 65px;
+    margin: 0 auto;
   }
 }
 
