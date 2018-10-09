@@ -9,11 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-.wrapper {
-  min-width: 320px;
-  padding: 0 20px;
-}
-
 body {
   min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -58,9 +53,7 @@ a {
 }
 
 @media (min-width: $tablet-width) {
-  .wrapper {
-    padding: 0 60px;
-  }
+
 }
 
 @media (min-width: $desktop-width) {
