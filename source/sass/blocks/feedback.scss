@@ -1,23 +1,39 @@
-.feedback__title {
-  @include big-font;
-  width: 210px;
-  margin: 0 auto 25px auto;
-}
-
 .feedback {
   min-width: 320px;
-  height: 200px;
+  min-height: 204px;
   text-align: center;
 
-  &--feedback-modif {
-    padding: 35px 20px 20px 20px;
+  &--modif {
+    padding: 37px 20px 0;
   }
 }
 
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 26px;
+}
+
 .feedback__text {
-  width: 280px;
-  min-height: 105px;
-  font-size: 14px;
-  line-height: 24px;
   margin: 0 auto;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    min-width: 768px;
+    min-height: 253px;
+
+    &--modif {
+      padding: 74px 60px 0;
+    }
+  }
+
+  .feedback__title {
+    font-size: 30px;
+  }
+
+  .feedback__text {
+    min-width: 450px;
+  }
 }

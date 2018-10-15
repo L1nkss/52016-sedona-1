@@ -1,35 +1,82 @@
-.user-visit__title {
-  @include big-font;
-  margin: 0 auto;
-  width: 245px;
-  height: 45px;
-  text-align: center;
-}
-
 .user-visit {
-  text-transform: none;
-  min-width: 320px;
+  min-width: 280px;
+  min-height: 410px;
   border: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+
+  &--modif {
+    padding: 15px 20px 0;
+  }
 }
 
-.user-visit__checkbox-ch {
+.user-visit__title {
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  width: 250px;
+}
+
+.user-visit__check {
   display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  min-height: 56px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 24px;
 }
 
+.user-visit__button {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.user-visit__check__text {
+  width: 55px;
+  height: 55px;
+  border-radius: 12%;
+  background-color: #f2f2f2;
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: -12px;
+}
 
 @media (min-width: $tablet-width) {
   .user-visit {
+    flex: 1;
+    flex-basis: 648px;
+    min-height: 305px;
+
+    &--modif {
+      margin-top: 23px;
+    }
+  }
+
+  .user-visit-test {
+    display: flex;
+    flex-wrap: wrap;
     min-width: 648px;
+    min-height: 254px;
   }
 
-  .user-visit__checkbox-ch {
-    width: 324px;
+  .user-visit__check {
+    flex: 1;
+    flex-basis: 324px;
+    min-height: 90px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .user-visit__checkbox-ch {
-    display: inline-block;
-    width: 250px;
+  .user-visit__title {
+    font-size: 21px;
+    width: 290px;
+    text-align: center;
   }
 }

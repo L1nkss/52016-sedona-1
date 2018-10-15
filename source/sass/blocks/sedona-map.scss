@@ -1,9 +1,9 @@
 .sedona-map {
-  height: 350px;
   min-width: 320px;
-  background-color: #58e000;
+  min-height: 350px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 

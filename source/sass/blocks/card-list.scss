@@ -1,16 +1,29 @@
 .card-list {
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
+
+  &--modif {
+   // padding: 0 20px 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .card-list {
-    min-width: 768px;
+    min-width: 748px;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 
-    &--list-modif {
+    &--modif {
+      padding: 0 60px 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-list {
+    min-width: 1200px;
+    min-height: 668px;
+
+    &--modif {
       padding: 0;
     }
   }

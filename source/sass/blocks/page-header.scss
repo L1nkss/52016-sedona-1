@@ -1,21 +1,22 @@
 .page-header {
   min-width: 320px;
- // min-height: 280px;
+  min-height: 56px;
+  background-color: $main-color;
 }
 
 .page-header__menu {
   min-width: 320px;
-  position: relative;
+  min-height: 56px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-width: $tablet-width;
     min-height: 56px;
+    min-width: 768px;
+    background-color: #ffffff;
   }
 
   .page-header__menu {
-    min-width: $tablet-width;
-    background-color: #ffffff;
+    min-height: 56px;
   }
 }

@@ -1,44 +1,49 @@
-.sedona-title__info {
-  width: 258px;
-  min-height: 70px;
-  margin: 0 auto;
+.sedona-title {
+  min-width: 320px;
+  min-height: 225px;
+  background-color: #ffffff;
 
-  &--title-modif {
-    @include big-font;
+  &--modif {
+    padding: 40px 20px 0 20px;
   }
+}
+
+.sedona-title__info {
+  margin: 0;
+  padding-bottom: 27px;
+  min-width: 280px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .sedona-title__text {
-  margin: 0;
-  margin-top: 25px;
-}
-
-.sedona-title {
-  min-width: 280px;
-  min-height: 224px;
+  padding: 0;
   text-align: center;
-
-  &--title-modif {
-    padding: 40px 20px 28px 20px;
-  }
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .sedona-title__info {
-    width: 465px;
-    margin-top: 12px;
+  .sedona-title {
+    min-height: 206px;
 
-    &--title-modif {
-      font-size: 21px;
+    &--modif {
+      padding: 50px 60px 0 60px;
     }
   }
 
+  .sedona-title__info {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .sedona-title {
-    min-width: 648px;
-    min-height: 210px;
+    min-height: 208px;
   }
 
-  .sedona-title__text {
-    margin-top: 11px;
+  .sedona-title__info {
+    padding-bottom: 54px;
   }
 }

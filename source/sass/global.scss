@@ -1,3 +1,20 @@
+/* Шрифты */
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 700;
+}
+
 /* Общие настройки */
 html {
   box-sizing: border-box;
@@ -23,35 +40,6 @@ a {
   text-decoration: none;
 }
 
-.visual-hidden {
-  display: none;
-}
-
-.hidden-text {
-  display: none;
-}
-
-.button {
-  background-color: $main-color;
-}
-
-/* Шрифты */
-@font-face {
-  font-family: "PT Sans";
-  src:
-    url("../fonts/ptsans.woff") format("woff"),
-    url("../fonts/ptsans.woff2") format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src:
-    url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: 700;
-}
-
 @media (min-width: $desktop-width) {
   body {
     width: 1200px;
@@ -59,4 +47,10 @@ a {
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
     background-color: #f2f2f2;
   }
+}
+
+/* Классы для javascript */
+
+.hide {
+  display: none;
 }

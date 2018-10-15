@@ -1,77 +1,66 @@
 .represent {
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 0;
-  border-top: 1px solid #e5e5e5;
+  min-width: 280px;
+  min-height: 305px;
+  padding: 0;
   margin: 0;
+  border: 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 
-  &--represent-modif {
-    padding: 18px 20px 25px 20px;
+  &--modif {
+    padding: 17px 20px 0;
   }
 }
 
 .represent__title {
-  @include big-font;
-  margin: 0 auto;
+  font-size: 18px;
+  margin: 0 auto 22px;
+  font-weight: 700;
   width: 140px;
 }
 
-.represent__info {
+.represent__text {
   display: flex;
-  height: 60px;
   align-items: center;
-  margin-bottom: 23px;
+  min-width: 280px;
+  margin-bottom: 20px;
 }
 
-
-.represent__name-holder::placeholder,
-.represent__surname-holder::placeholder,
-.represent__patron-holder::placeholder {
-  @include big-font;
-  color: #000000;
-  background-color: $main-form-color;
-  text-transform: none;
-  padding-left: 21px;
-}
-
-.represent__name-holder {
-  flex: 1;
-  padding: 20px 0 18px 0;
-  line-height: 26px;
-  border: 0;
-  background-color: $main-form-color;
-  margin-left: 10px;
-}
-
-.represent__surname-holder {
-  line-height: 26px;
-  padding: 20px 0 20px 0;
-  background-color: $main-form-color;
+.represent__value {
+  height: 58px;
+  background-color: #f2f2f2;
   border: 0;
   flex: 1;
-  margin-left: 12px;
-}
+  margin-left: 15px;
 
-.represent__patron-holder {
-  line-height: 26px;
-  background-color: $main-form-color;
-  border: 0;
-  flex: 1;
-  padding: 22px 0 21px 0;
-  margin-left: 17px;
+  &::placeholder {
+    border: 0;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .represent {
-    width: 324px;
-    min-height: 305px;
-    border: 0;
-    flex-grow: 1;
+    flex: 1;
+    flex-basis: 324px;
+    height: 300px;
+    min-height: 300px;
 
-    &--represent-modif {
-      padding: 0;
+    &--modif {
+      padding: 0 0 0 57px;
     }
+  }
+
+  .represent__title {
+    font-size: 21px;
+    margin: 0 0 58px;
+  }
+
+  .represent__text {
+    min-width: 256px;
   }
 }

@@ -1,48 +1,105 @@
 .card-item {
-  min-width: 280px;
-  min-height: 410px;
-  flex-basis: 320px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #e5e5e5;
+  min-width: 320px;
+  min-height: 415px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+
+  &--modif {
+    padding: 20px 20px 0;
+  }
 }
 
-.card-item__photo {
-  width: 280px;
-  height: 279px;
+.card-item__info {
+  min-width: 280px;
+  min-height: 105px;
+  display: flex;
+  flex-direction: column;
+
+  &--modif {
+    padding-top: 9px;
+  }
 }
 
 .card-item__name {
+  margin: 0;
   font-weight: 700;
-}
-
-.card-item__autor {
-  text-transform: none;
+  line-height: 24px;
 }
 
 .card-item__count-like {
   font-weight: 700;
+  padding-left: 36px;
+}
+
+.card-item__autor {
+  text-transform: none;
+  margin-bottom: 5px;
+}
+
+.card-item__image {
+  min-width: 280px;
+  height: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .card-item {
+    flex-basis: 324px;
+    min-height: 345px;
+
     &:first-child {
-      min-width: 768px;
+      flex-basis: 648px;
+    }
+
+    &--modif {
       padding: 0;
-
-      .card-item__photo {
-        min-width: 768px;
-      }
-
-      .card-item__info {
-        min-width: 768px;
-      }
     }
   }
 
-  .card-item__photo {
-    flex: 1;
+  .card-item__image {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-item__count-like {
+    display: inline-block;
+    margin-left: auto;
+    width: 60px;
+  }
+
+  .card-item__autor {
+    display: inline-block;
+    width: 150px;
+  }
+
+  .card-item__info {
+    display: block;
+    min-height: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-item__info {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .card-item {
+    flex-basis: 400px;
+    min-height: 267px;
+    position: relative;
+
+    &:first-child {
+      flex-basis: 1200px;
+      height: 400px;
+    }
+  }
+
+  .card-item__image {
+    height: 100%;
+    width: 100%;
   }
 }

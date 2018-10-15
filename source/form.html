@@ -10,130 +10,136 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__menu main-menu ">
-      <ul class="main-menu__menu-list">
-        <li class="main-menu__menu-item">
-          <a class="main-menu__link main-menu__link--item-link" href="index.html">Главная</a>
+    <nav class="page-header__menu">
+      <ul class="main-menu">
+        <li class=main-menu__item>
+          <a class="main-menu__link" href="index.html">Главная</a>
         </li>
-        <li class="main-menu__menu-item">
-          <a class="main-menu__link main-menu__link--item-link" href="photo.html">Фото и видео</a>
+        <li class=main-menu__item>
+          <a class="main-menu__link" href="photo.html">Фото и видео</a>
         </li>
-        <li class="main-menu__menu-item">
-          <a class="main-menu__link main-menu__link--item-link" href="#">Форма отзыва</a>
+        <li class=main-menu__item>
+          <a class="main-menu__link" href="#">Форма отзыва</a>
         </li>
-        <li class="main-menu__menu-item">
-          <a class="main-menu__link main-menu__link--item-link" href="https://htmlacademy.ru/intensive/adaptive">html
-            academy</a>
+        <li class=main-menu__item>
+          <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
         </li>
       </ul>
       <div class="main-menu__action">
-        <img class="main-menu__action__logo" src="./img/logo-sedona-mobile.svg" alt="Седона Логотип">
+        <img class="main-menu__logo" src="img/logo-sedona-mobile.svg" width="102" height="85">
         <button class="main-menu__button-toggle" type="button"></button>
       </div>
     </nav>
   </header>
-  <section class="sedona-bglogo sedona-bglogo--form-back">
-    <span class="sedona-bglogo__title">sedona</span>
+
+  <section class="sedona-bglogo sedona-bglogo--modif">
   </section>
-  <section class="feedback feedback--feedback-modif">
-    <h4 class="feedback__title">Оставьте свой отзыв</h4>
+
+  <section class="feedback feedback--modif">
+    <h3 class="feedback__title">Оставьте свой отзыв</h1>
     <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами
       достопримечательностях</p>
   </section>
+
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
-    <fieldset class="represent represent--represent-modif">
+    <fieldset class="represent represent--modif">
       <h4 class="represent__title">Представьтесь:</h4>
-      <div class="represent__info">
-        <label for="name">Имя*:</label>
-        <input class="represent__name-holder" id="name" type="text" placeholder="Петр" name="user-name">
-      </div>
-      <div class="represent__info">
-        <label for="surname">Фамилия*:</label>
-        <input class="represent__surname-holder" id="surname" type="text" placeholder="Иванов" name="user-surname">
-      </div>
-      <div class="represent__info">
-        <label for="patronymic">Отчество*:</label>
-        <input class="represent__patron-holder" id="patronymic" type="text" placeholder="Александрович" name="user-patronymic">
-      </div>
+      <label class="represent__text" for="name">имя*:
+        <input class="represent__value" id="name" type="text" name="user-name" placeholder="Петр">
+      </label>
+      <label class="represent__text" for="surname">Фамилия*:
+          <input class="represent__value" id="surname" type="text" name="user-surname" placeholder="Иванов">
+      </label>
+      <label class="represent__text" for="patronymic">Отчество:
+        <input class="represent__value" id="patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+      </label>
     </fieldset>
 
-    <fieldset class="contact-info contact-info--contact-modif">
-      <h4 class="contact-info__title">Контактная информация:</h4>
-      <div class="contact-info__date">
-        <label for="mobile">Контактный телефон*:</label>
-        <input class="contact-info__mobile-holder" type="tel" id="mobile" placeholder="Введите телефон" name="user-mobile">
-      </div>
-      <div class="contact-info__date">
-        <label for="email">Электронная почта*:</label>
-        <input class="contact-info__email-holder" type="email" id="email" placeholder="Введите e-mail" name="user-email">
-      </div>
+    <fieldset class="contacts contacts--modif">
+      <h4 class="contact__title">Контактная информация:</h4>
+      <label class="contacts__text contacts__text--modif" for="mobile">
+        <span class="contacts__info">Контактный телефон*:</span>
+        <input class="contacts__value" id="mobile" type="tel" name="user-mobile" placeholder="Введите телефон">
+      </label>
+      <label class="contacts__text" for="email">
+        <span class="contacts__info">Электронная почта*:</span>
+        <input class="contacts__value" id="email" type="email" name="user-email" placeholder="Введите e-mail">
+      </label>
     </fieldset>
 
-    <fieldset class="user-impr user-impr--impr-modif">
+    <fieldset class="user-impr user-impr--modif">
       <h4 class="user-impr__title">Ваше общее впечатление:</h4>
-      <label class="user-impr__radio-ch" for="good-impr">
-        <input type="radio" name="impr" value="Good" id="good-impr" checked>
-        Скорее положительное
+      <label class="user-impr__radio user-impr__radio--modif">Скорее положительное
+        <input class="user-impr__button" type="radio" name="impr" value="Good" id="good-impr">
+        <span class="user-impr__radio__text"></span>
       </label>
-      <label class="user-impr__radio-ch" for="bad-impr">
-        <input type="radio" name="impr" value="Bad" id="bad-impr">
-        Скорее отрицательное
+      <label class="user-impr__radio user-impr__radio--modif">Скорее отрицательное
+        <input class="user-impr__button" type="radio" name="impr" value="Bad" id="bad-impr">
+        <span class="user-impr__radio__text"></span>
       </label>
-      <label class="user-impr__radio-ch" for="idk-impr">
-        <input type="radio" name="impr" value="idk" id="idk-impr">
-        Затрудняюсь ответить
-      </label>
-    </fieldset>
-
-    <fieldset class="user-visit">
-      <h4 class="user-visit__title">Посещенные достопримечательности</h4>
-      <label class="user-visit__checkbox-ch" for="bridge">
-        <input type="checkbox" name="places" id="bridge" value="bridge" checked>
-        Мост Дьявола
-      </label>
-      <label class="user-visit__checkbox-ch" for="mount">
-        <input type="checkbox" name="places" id="mount" value="mount" checked>
-        Гора-Колокол
-      </label>
-      <label class="user-visit__checkbox-ch" for="park">
-        <input type="checkbox" name="places" id="park" value="park" checked>
-        Слайд-парк
-      </label>
-      <label class="user-visit__checkbox-ch" for="cliffs">
-        <input type="checkbox" name="places" id="cliffs" value="cliffs">
-        Красные скалы
+      <label class="user-impr__radio user-impr__radio--modif">Затрудняюсь ответить
+        <input class="user-impr__button" type="radio" name="impr" value="idk" id="idk-impr" disabled>
+        <span class="user-impr__radio__text"></span>
       </label>
     </fieldset>
 
-    <fieldset class="user-opinion user-opinion--opinion-modif">
-      <h4 class="user-opinion__title">Опишите свои эмоции</h4>
-      <textarea class="user-opinion__text" placeholder="Опишите подробно все свои восторги" name="opinion"></textarea>
-    </fieldset>
-    <!--   <fieldset class="form-button form-button--form-button-modif">
-        <input class="button feedback-form--button" type="submit">
-        <span class="hidden-text">* — обязательные поля</span>
-      </fieldset>
-    -->
-  </form>
-
-  <footer class="page-footer">
-    <h4 class="page-footer__hash">#Visitsedona</h4>
-    <div class="page-footer_social social">
-      <a class="social__item social_item--twitter" href="#"></a>
-      <a class="social__item social_item--facebook" href="#"></a>
-      <a class="social__item social_item--youtube" href="#"></a>
+    <fieldset class="user-visit user-visit--modif">
+      <h4 class="user-visit__title">Посещенные достопримечательности:</h4>
+      <div class="user-visit-test">
+      <label class="user-visit__check" for="bridge">Мост Дьявола
+        <input class="user-visit__button" type="checkbox" name="places" id="bridge" value="bridge">
+        <span class="user-visit__check__text"></span>
+      </label>
+      <label class="user-visit__check" for="mount">Гора-Колокол
+        <input class="user-visit__button" type="checkbox" name="places" id="mount" value="mount">
+        <span class="user-visit__check__text"></span>
+      </label>
+      <label class="user-visit__check" for="park">Слайд-парк
+        <input class="user-visit__button" type="checkbox" name="places" id="park" value="park">
+        <span class="user-visit__check__text"></span>
+      </label>
+      <label class="user-visit__check" for="cliffs">Красные скалы
+        <input class="user-visit__button" type="checkbox" name="places" id="cliffs" value="cliffs">
+        <span class="user-visit__check__text"></span>
+      </label>
     </div>
-    <p class="page-footer__made-by made-by">
-      <span class="made-by__text">Разработано</span>
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-        y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
+    </fieldset>
+
+    <fieldset class="user-opinion user-opinion--modif">
+      <h4 class="user-opinion__title">Опишите свои эмоции</h4>
+      <textarea class="user-opinion__text" placeholder="Опишите подробно все свои восторги" name="opinion"></textarea>></textarea>
+    </fieldset>
+
+    <button class="feedback-form__button" type="button">Отправить отзыв</button>
+    </form>
+
+  <footer class="page-footer page-footer--modif">
+    <span class="page-footer__hash">#Visitsedona</span>
+    <div class="socials socials--modif">
+      <div class="socials-item">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+          y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
+          xml:space="preserve">
+          <g id="W6EeEF_1_">
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="socials-item"></div>
+      <div class="socials-item"></div>
+    </div>
+    <p class="page-footer__creater">
+      <span class="page-footer_creater__text">Разработано</span>
+      <svg class="page-footer__creater__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
         xml:space="preserve">
         <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
       </svg>
     </p>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 
 </html>

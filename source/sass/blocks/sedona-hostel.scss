@@ -1,0 +1,58 @@
+.sedona-hostel {
+  min-width: 320px;
+  min-height: 288px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &--modif {
+    padding: 27px 20px 0 20px;
+  }
+}
+
+.sedona-hostel__title {
+  margin: 0 auto 19px auto;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.sedona-hostel__text {
+  margin: 0 auto 35px auto;
+  line-height: 24px;
+  min-width: 265px;
+}
+
+.sedona-hostel__button {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 16px;
+  width: 280px;
+  background-color: $main-color;
+  min-height: 58px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-hostel {
+    min-width: 768px;
+    min-height: 320px;
+
+    &--modif {
+      padding: 56px 60px 0 60px;
+    }
+  }
+
+  .sedona-hostel__title {
+    font-size: 30px;
+  }
+
+  .sedona-hostel__text {
+    min-width: 450px;
+  }
+
+  .sedona-hostel__button {
+    width: 460px;
+  }
+}

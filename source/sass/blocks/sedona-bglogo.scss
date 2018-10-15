@@ -1,32 +1,24 @@
 .sedona-bglogo {
+  height: 388px;
+  min-width: 320px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: $main-color;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 320px;
-  height: 390px;
 
-  &--form-back {
-    min-width: 320px;
-    height: 160px;
+  &--modif {
+    height: 158px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .sedona-bglogo {
+    height: 518px;
+    min-width: 320px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    height: 515px;
 
-    &--form-back {
-      min-width: 768px;
+    &--modif {
       height: 290px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .sedona-bglogo {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
