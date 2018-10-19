@@ -40,6 +40,89 @@ a {
   text-decoration: none;
 }
 
+/* Окна в форме */
+.fail-popup {
+  display: none;
+  width: 320px;
+  height: 280px;
+  position: absolute;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #ffffff;
+  z-index: 2;
+
+  &--modif {
+    padding: 20px 20px 0;
+  }
+}
+
+.fail-popup__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.fail-popup__text {
+  margin: 0 auto;
+  max-width: 215px;
+  text-align: center;
+}
+
+.fail-popup__button {
+  height: 58px;
+  width: 180px;
+  background-color: $main-color;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  border: 0;
+}
+
+.success-popup {
+  display: none;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  position: absolute;
+  z-index: 2;
+  width: 320px;
+  background-color: #ffffff;
+
+  &--modif {
+    padding: 15px 20px 0;
+  }
+}
+
+.success-popup__title {
+  width: 220px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.success-popup__text {
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.success-popup__button {
+  width: 280px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: $main-color;
+  color: #ffffff;
+  height: 58px;
+  border: 0;
+  padding: 0;
+  display: block;
+}
+
+/* конец секции с формой */
+
 @media (min-width: $desktop-width) {
   body {
     width: 1200px;

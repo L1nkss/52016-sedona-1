@@ -32,6 +32,10 @@
   min-height: 58px;
   text-align: center;
   margin: 0 auto;
+
+  &:hover {
+    background-color: #669ec0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -44,12 +48,18 @@
     }
   }
 
+  .sedona-hostel__wrap {
+    display: block;
+  }
+
   .sedona-hostel__title {
     font-size: 30px;
+    margin-bottom: 31px;
   }
 
   .sedona-hostel__text {
-    min-width: 450px;
+    max-width: 450px;
+    margin-bottom: 41px;
   }
 
   .sedona-hostel__button {

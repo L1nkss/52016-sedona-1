@@ -2,18 +2,6 @@
   min-width: 320px;
 }
 
-.feedback-form__button {
-  width: 280px;
-  height: 58px;
-  background-color: $main-color;
-  font-size: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 auto;
-  display: block;
-  border: 0;
-}
-
 @media (min-width: $tablet-width) {
   .feedback-form {
     display: flex;
@@ -23,10 +11,28 @@
       padding: 0 60px;
     }
   }
+
+  .feedback-form__button {
+    margin: 0;
+
+    &::after {
+      content: "* — обязательные поля";
+      position: absolute;
+      color: #000000;
+      right: 40px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .feedback-form {
     background-color: #ffffff;
+    max-width: 1200px;
+
+    &--modif {
+      padding: 0 120px;
+    }
   }
 }

@@ -25,9 +25,17 @@
   margin: 0 auto;
 }
 
-.ppage-footer__creater__logo {
+.page-footer__creater__logo {
   display: block;
   margin-left: auto;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 .page-footer_creater__text {

@@ -2,17 +2,25 @@
   width: 151px; // 46 48
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   &--modif {
     margin-bottom: 39px;
   }
 }
 
-.socials-item {
+.social__icon {
+  fill: #ffffff;
+}
+
+.socials__item {
   width: 46px;
   height: 48px;
   background-color: $main-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,7 +35,7 @@
     }
   }
 
-  .socials-item {
+  .socials__item {
     &:nth-child(2) {
       margin: 0 5px;
     }

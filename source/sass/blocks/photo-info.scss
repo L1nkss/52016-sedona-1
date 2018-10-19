@@ -17,4 +17,41 @@
 .photo-info__text {
   margin: 0;
   text-align: center;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-info__title {
+    font-size: 30px;
+    width: 211px;
+  }
+
+  .photo-info {
+    min-width: 320px;
+    min-height: 248px;
+
+    &--modif {
+      padding: 75px 60px 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-info {
+    min-height: 286px;
+    background-color: #ffffff;
+
+    &--modif {
+      padding-top: 111px;
+    }
+  }
+
+  .photo-info__title {
+    margin-bottom: 30px;
+  }
+
+  .photo-info__text {
+    max-width: 435px;
+    margin: 0 auto;
+  }
 }

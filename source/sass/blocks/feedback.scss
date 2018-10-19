@@ -31,9 +31,21 @@
 
   .feedback__title {
     font-size: 30px;
+    margin: 0 auto 31px;
   }
 
   .feedback__text {
-    min-width: 450px;
+    width: 446px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    min-height: 274px;
+    background-color: #ffffff;
+
+    &--modif {
+      padding: 111px 0 0;
+    }
   }
 }

@@ -1,14 +1,15 @@
 .user-impr {
-  min-width: 280px;
-  min-height: 290px;
+  //min-width: 280px;
+  //min-height: 290px;
+  min-width: 320px;
   border: 0;
   margin: 0;
   padding: 0;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  //border-top: 1px solid #f2f2f2;
+  // border-bottom: 1px solid #f2f2f2;
 
   &--modif {
-    padding: 16px 20px 0;
+    padding: 16px 20px 5px;
   }
 }
 
@@ -29,8 +30,36 @@
   position: relative;
 
   &--modif {
-    padding-left: 70px;
+    padding-left: 78px;
     margin-bottom: 12px;
+  }
+
+  &::before {
+    content: "";
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: -12px;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -40,26 +69,17 @@
   cursor: pointer;
   height: 0;
   width: 0;
-}
 
-.user-impr__radio__text {
-  width: 53px;
-  height: 53px;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  display: block;
-  position: absolute;
-  left: 2px;
-  top: -12px;
-
-  &::before {
+  &:checked + .user-impr__radio::after {
     content: "";
     width: 20px;
     height: 20px;
     background-color: #000000;
     display: block;
     border-radius: 50%;
-    top: 0;
+    position: absolute;
+    left: 19px;
+    top: 5px;
   }
 }
 

@@ -8,6 +8,10 @@
   }
 }
 
+.sedona-title__wrap {
+  display: block;
+}
+
 .sedona-title__info {
   margin: 0;
   padding-bottom: 27px;
@@ -33,17 +37,23 @@
     }
   }
 
+  .sedona-title__wrap {
+    display: inline-block;
+  }
+
   .sedona-title__info {
     font-size: 21px;
+    max-width: 445px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sedona-title {
-    min-height: 208px;
+    min-height: 206px;
   }
 
   .sedona-title__info {
-    padding-bottom: 54px;
+    padding-bottom: 29px;
   }
 }

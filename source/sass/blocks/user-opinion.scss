@@ -1,18 +1,32 @@
 .user-opinion {
   min-width: 280px;
-  min-height: 220px;
+  //min-height: 220px;
   margin: 0;
   padding: 0;
   border: 0;
 
   &--modif {
-    padding: 0 20px;
+    padding: 18px 20px 0;
   }
 }
 
+.user-opinion__button {
+  width: 280px;
+  height: 58px;
+  background-color: $main-color;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 42px auto 0;
+  display: block;
+  border: 0;
+}
+
 .user-opinion__title {
-  margin: 0 auto;
-  width: 225px;
+  margin: 0 auto 18px;
+  width: 215px;
+  font-size: 18px;
 }
 
 .user-opinion__text {
@@ -21,12 +35,13 @@
   min-height: 160px;
   border: 0;
   background-color: #f2f2f2;
+  padding: 0;
 
   &::placeholder {
     font-size: 18px;
     font-weight: 700;
     color: #000000;
-    padding: 15px 0 0 15px;
+    padding: 18px 18px 0 21px;
   }
 }
 
@@ -35,6 +50,25 @@
     flex: 1;
     flex-basis: 648px;
     min-height: 232px;
+    position: relative;
+
+    &--modif {
+      padding: 20px 0 0;
+    }
+  }
+
+  .user-opinion__button {
+    width: 324px;
+    margin: 48px 0 0;
+
+    &::after {
+      content: "* — обязательные поля";
+      position: absolute;
+      color: black;
+      font-size: 14px;
+      font-weight: 400;
+      right: 0;
+    }
   }
 
   .user-opinion__title {
@@ -45,5 +79,23 @@
 
   .user-opinion__text {
     min-width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-opinion {
+    &--modif {
+      margin-top: 26px;
+      padding: 18px 0 0;
+    }
+  }
+
+  .user-opinion__text {
+    min-width: 960px;
+  }
+
+  .user-opinion__button {
+    width: 480px;
+    margin-top: 49px;
   }
 }
