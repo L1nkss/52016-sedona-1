@@ -1,21 +1,39 @@
 .sedona-list {
-  min-height: 416px;
+  ////min-height: 416px;
   min-width: 320px;
 
   &--modif {
-    padding: 36px 20px 0 20px;
+    padding: 0 20px 35px;
   }
+}
+
+.sedona-list__block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
   .sedona-list {
-    min-height: 330px;
+    ////min-height: 330px;
     min-width: 768px;
-    display: flex;
-    flex-wrap: wrap;
+    ////display: flex;
+    ////flex-wrap: wrap;
 
     &--modif {
       padding: 0;
+    }
+  }
+
+  .sedona-list__block {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--modif {
+      padding-top: 90px;
+      padding-bottom: 61px;
     }
   }
 }
@@ -23,5 +41,11 @@
 @media (min-width: $desktop-width) {
   .sedona-list {
     background-color: #ffffff;
+  }
+
+  .sedona-list__block {
+    &--modif {
+      padding-bottom: 82px;
+    }
   }
 }

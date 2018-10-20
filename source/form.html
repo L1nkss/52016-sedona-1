@@ -25,15 +25,16 @@
           <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
         </li>
       </ul>
-      <div class="main-menu__action">
-        <a href="index.html">
+      <div class="menu-action">
+        <!--main-menu__action  main-menu__logo  main-menu__icon-->
+        <a class="menu-action__logo" href="index.html">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
-            <img class="main-menu__logo" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип Седоны">
+            <img class="menu-action__icon" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип Седоны">
           </picture>
         </a>
-        <button class="main-menu__button-toggle" type="button"></button>
+        <button class="menu-action__button-toggle menu-action__button-toggle--toggle-modif" type="button"></button>
       </div>
     </nav>
   </header>
@@ -42,9 +43,9 @@
   </section>
 
   <section class="feedback feedback--modif">
-    <h3 class="feedback__title">Оставьте свой отзыв</h1>
-      <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами
-        достопримечательностях</p>
+    <h3 class="feedback__title">Оставьте свой отзыв</h3>
+    <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами
+      достопримечательностях</p>
   </section>
   <form class="feedback-form feedback-form--modif" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="represent represent--modif">
@@ -134,7 +135,7 @@
           опубликуем его на сайте</p>
       </div>
 
-      <div class="sucees-popup__block">
+      <div class="success-popup__block">
         <button class="success-popup__button">Закрыть окно</button>
       </div>
     </section>
@@ -144,7 +145,7 @@
     <span class="page-footer__hash">#Visitsedona</span>
     <div class="socials socials--modif">
       <div class="socials__item">
-        <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg class="socials__item__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
           xml:space="preserve">
           <g id="W6EeEF_1_">
@@ -155,14 +156,14 @@
         </svg>
       </div>
       <div class="socials__item">
-        <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg class="socials__item__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944"
           xml:space="preserve">
           <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
         </svg>
       </div>
       <div class="socials__item">
-        <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg class="socials__item__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015"
           xml:space="preserve">
           <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
@@ -171,7 +172,7 @@
       </div>
     </div>
     <p class="page-footer__creater">
-      <span class="page-footer_creater__text">Разработано</span>
+      <span class="page-footer__creater__text">Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
           y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
@@ -180,6 +181,7 @@
         </svg>
       </a>
     </p>
+
   </footer>
 
   <script src="js/main.js"></script>

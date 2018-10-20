@@ -1,5 +1,10 @@
 .feedback-form {
   min-width: 320px;
+  background-color: #ffffff;
+
+  &--modif {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -8,7 +13,7 @@
     flex-wrap: wrap;
 
     &--modif {
-      padding: 0 60px;
+      padding: 0 60px 60px;
     }
   }
 

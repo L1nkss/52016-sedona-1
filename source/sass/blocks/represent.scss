@@ -4,11 +4,11 @@
   padding: 0;
   margin: 0;
   border: 0;
-  //border-top: 1px solid #f2f2f2;
-  //border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 
   &--modif {
-    padding: 17px 20px 0;
+    padding: 17px 20px 2px;
   }
 }
 
@@ -78,15 +78,23 @@
     flex-basis: 324px;
     height: 300px;
     min-height: 300px;
+    border-top: 0;
+    border-bottom: 0;
 
     &--modif {
-      padding: 0 0 0 57px;
+      padding: 0 0 0 41px;
+    }
+  }
+
+  .represent__info {
+    &--modif {
+      padding-left: 16px;
     }
   }
 
   .represent__title {
     font-size: 21px;
-    margin: 0 0 58px;
+    margin: 0 0 58px 17px;
   }
 
   .represent__text {
@@ -97,7 +105,7 @@
 @media (min-width: $desktop-width) {
   .represent {
     &--modif {
-      padding: 0 0 0 80px;
+      padding: 0 0 0 63px;
     }
   }
 }

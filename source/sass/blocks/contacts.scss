@@ -8,10 +8,10 @@
   //display: flex;
   //flex-direction: column;
   //border-top: 1px solid #f2f2f2;
-  //border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 
   &--modif {
-    padding: 23px 20px 16px;
+    padding: 18px 20px 16px;
   }
 }
 
@@ -48,7 +48,7 @@
 
 .contacts__title {
   margin: 0 auto 20px;
-  width: 245px;
+  width: 239px;
   font-size: 18px;
   font-weight: 700;
   display: block;
@@ -99,6 +99,8 @@
   .contacts {
     flex: 1;
     flex-basis: 648px;
+    position: relative;
+    border-bottom: 0;
 
     &--modif {
       padding: 0;
@@ -116,6 +118,26 @@
     font-size: 21px;
     width: 280px;
     margin: 0 auto 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
   }
 
   .contacts__text {
@@ -137,6 +159,16 @@
 
   .contacts__title {
     margin-bottom: 75px;
+
+    &::before {
+      content: "";
+      width: 280px;
+    }
+
+    &::after {
+      content: "";
+      width: 280px;
+    }
   }
 
   .contacts__info {
@@ -153,5 +185,6 @@
 
   .contacts__text {
     margin: 0;
+    margin-right: 15px;
   }
 }

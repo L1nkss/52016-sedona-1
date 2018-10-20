@@ -40,6 +40,12 @@ a {
   text-decoration: none;
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Окна в форме */
 .fail-popup {
   display: none;
@@ -123,7 +129,7 @@ a {
 
 /* конец секции с формой */
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1200px) {
   body {
     width: 1200px;
     margin: 0 auto;

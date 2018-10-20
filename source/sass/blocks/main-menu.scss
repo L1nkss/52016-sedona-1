@@ -27,7 +27,7 @@
 
 .main-menu__item {
   text-align: center;
-  min-height: 54px;
+  height: 54px; //в firefox не работает Min-height
 }
 
 .main-menu__link {
@@ -45,38 +45,6 @@
 
   &:active {
     color: #dadada;
-  }
-}
-
-.main-menu__action {
-  min-height: 56px;
-  background-color: #ffffff;
-  position: relative;
-}
-
-.main-menu__logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.main-menu__button-toggle {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  display: block;
-  border: none;
-  //mask: url("../img/icon-menu.svg") no-repeat 100% 100%;
-  background: url("../img/icon-menu.svg") no-repeat 100% 100%;
-  //background-color: #9ac2db;
-  right: 20px;
-  top: 14px;
-
-  &--toggle-modif {
-    //mask: url("../img/icon-cross.svg") no-repeat 100% 100%;
-    background: url("../img/icon-cross.svg") no-repeat 100% 100%;
-    //background-color: #ffffff;
-    top: -210px;
   }
 }
 
@@ -104,17 +72,6 @@
     font-size: 14px;
     line-height: 24px;
     padding: 0;
-  }
-
-  .main-menu__action {
-    top: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .main-menu__button-toggle {
-    display: none;
   }
 }
 

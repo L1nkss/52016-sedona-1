@@ -44,7 +44,7 @@
   width: 100%;
   height: 3px;
   background-color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .video-presentation__control__replay {
@@ -52,7 +52,7 @@
   height: 40px;
   background-color: transparent;
   border: none;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   margin-right: auto;
 }
 
@@ -61,7 +61,7 @@
   height: 40px;
   background-color: transparent;
   border: none;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 .video-presentation__control__fullscreen {
@@ -69,7 +69,7 @@
   height: 40px;
   background-color: transparent;
   border: none;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 /* Конец видео */
@@ -98,7 +98,7 @@
 }
 
 .video-presentation__window {
-  width: 320px;
+  width: 100%;
   height: 200px;
 }
 
@@ -113,7 +113,7 @@
   }
 
   .video-presentation__window {
-    width: 648px;
+    width: 100%;
     height: 500px;
   }
 
@@ -140,38 +140,43 @@
   .video-presentation__control {
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: -92px;
+    margin-top: -100px;
     margin-left: 0;
     margin-right: 0;
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 0;
   }
 
   .video-presentation__control__toogler {
-    padding-top: 31px;
+    padding-top: 22px;
     padding-right: 71px;
     padding-left: 45px;
   }
 
   .video-presentation__control__toogler__slider {
-    top: 67%;
+    top: 62%;
     left: 32%;
+  }
+
+  .video-presentation__control__toogler__progress {
+    width: 107%;
   }
 
   .video-presentation__control__replay {
     order: -1;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 35px;
   }
 
   .video-presentation__control__cc {
     margin-bottom: 0;
-    padding-top: 16px;
+    padding-top: 3px;
     margin-right: 13px;
   }
 
   .video-presentation__control__fullscreen {
-    padding-top: 22px;
+    padding-top: 11px;
     margin-right: 29px;
   }
 
