@@ -12,6 +12,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position-y: bottom, center, center;
   background-position-x: center, center, center;
+  background-color: $main-color;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {

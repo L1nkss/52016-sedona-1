@@ -63,7 +63,7 @@
 
 .contacts__value {
   display: block;
-  flex: 1;
+  //flex: 1;
   height: 58px;
   border: 0;
   background-color: #f2f2f2;
@@ -97,7 +97,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    flex: 1;
+    //flex: 1;
+    flex-grow: 1;
     flex-basis: 648px;
     position: relative;
     border-bottom: 0;
@@ -186,5 +187,9 @@
   .contacts__text {
     margin: 0;
     margin-right: 15px;
+  }
+
+  .contacts__value {
+    flex-grow: 1;
   }
 }

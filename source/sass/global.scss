@@ -51,14 +51,17 @@ img {
   display: none;
   width: 320px;
   height: 280px;
-  position: absolute;
+  position: fixed;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   background-color: #ffffff;
   z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &--modif {
-    padding: 20px 20px 0;
+    padding: 40px 20px 0;
   }
 }
 
@@ -73,6 +76,10 @@ img {
   margin: 0 auto;
   max-width: 215px;
   text-align: center;
+
+  &--modif {
+    padding: 20px 0;
+  }
 }
 
 .fail-popup__button {
@@ -92,13 +99,16 @@ img {
   display: none;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 320px;
   background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &--modif {
-    padding: 15px 20px 0;
+    padding-top: 40px;
   }
 }
 
@@ -110,9 +120,19 @@ img {
 }
 
 .success-popup__text {
-  max-width: 230px;
+  max-width: 220px;
   text-align: center;
   margin: 0 auto;
+
+  &--modif {
+    padding: 35px 0;
+  }
+}
+
+.success-popup__block {
+  background-color: #f2f2f2;
+  width: 320px;
+  padding: 20px;
 }
 
 .success-popup__button {
@@ -125,9 +145,53 @@ img {
   border: 0;
   padding: 0;
   display: block;
+  margin: 0 auto;
 }
 
 /* конец секции с формой */
+@media (min-width: $tablet-width) {
+  .fail-popup {
+    width: 400px;
+    height: 330px;
+  }
+
+  .fail-popup__title {
+    width: 230px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .fail-popup__text {
+    max-width: 290px;
+  }
+
+  .fail-popup__button {
+    width: 275px;
+  }
+
+  .success-popup {
+    width: 645px;
+  }
+
+  .success-popup__title {
+    font-size: 30px;
+    width: 355px;
+  }
+
+  .success-popup__text {
+    max-width: 420px;
+  }
+
+  .success-popup__block {
+    width: 645px;
+    padding: 35px;
+  }
+
+  .success-popup__button {
+    width: 460px;
+  }
+}
 
 @media (min-width: 1200px) {
   body {

@@ -68,12 +68,13 @@
       <h4 class="contacts__title">Контактная информация:</h4>
       <div class="contacts__info contacts__info--modif contacts__info--phone">
         <label class="contacts__text" for="mobile"><span class="contacts__hidden">Контактный</span> телефон*:</label>
-        <input class="contacts__value" id="mobile" type="tel" name="user-mobile" placeholder="Введите телефон">
+        <input class="contacts__value" id="mobile" type="tel" name="user-mobile" placeholder="Введите телефон" pattern="2-[0-9]{3}-[0-9]{3}" title="Введите телефон в формате 2-xxx-xxx, где вместо x
+        должна быть цифра:">
         <span class="contacts__icon contacts__icon--phone"></span>
       </div>
       <div class="contacts__info contacts__info--modif">
         <label class="contacts__text" for="email">Электронная почта*:</label>
-        <input class="contacts__value" id="email" type="email" name="user-email" placeholder="Введите e-mail">
+        <input class="contacts__value" id="email" type="email" name="user-email" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
         <span class="contacts__icon contacts__icon--email"></span>
       </div>
     </fieldset>
@@ -124,14 +125,14 @@
 
     <section class="fail-popup fail-popup--modif">
       <h4 class="fail-popup__title">Что-то пошло не так!</h4>
-      <p class="fail-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <p class="fail-popup__text fail-popup__text--modif">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="fail-popup__button">ок</button>
     </section>
 
     <section class="success-popup success-popup--modif">
       <div class="success-popup__info">
         <h4 class="success-popup__title">Ваш отзыв отправлен!</h4>
-        <p class="success-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы
+        <p class="success-popup__text success-popup__text--modif">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы
           опубликуем его на сайте</p>
       </div>
 

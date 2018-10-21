@@ -37,6 +37,7 @@
   background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $main-color;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
