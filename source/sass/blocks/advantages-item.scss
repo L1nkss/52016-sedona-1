@@ -37,17 +37,22 @@
     min-width: 256px;
 
     &--modif {
-      padding: 48px 50px 0 48px;
+      padding: 44px 50px 0 48px;
     }
   }
 
+  .advantages-item__text__br {
+    display: block;
+  }
+
   .advantages-item__count {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   .advantages-item__title {
     font-size: 21px;
     width: 130px;
+    margin-bottom: 7px;
   }
 
   .advantages-item__text {
@@ -58,9 +63,13 @@
 @media (min-width: $desktop-width) {
   .advantages-item {
     min-width: 400px;
+
+    &--modif {
+      padding: 44px 20px 0;
+    }
   }
 
   .advantages-item__text {
-    min-width: 280px;
+    min-width: 285px;
   }
 }
