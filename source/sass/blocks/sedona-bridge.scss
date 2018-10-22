@@ -1,95 +1,121 @@
 .sedona-bridge {
   min-height: 450px;
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
-}
-
-.sedona-bridge__title {
-  @include big-font;
-  margin: 0;
-}
-
-.sedona-bridge__photo {
-  background-image: url("../img/main-bridge-mobile@1x.jpg");
-  background-color: $main-color;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-width: 320px;
-  height: 260px;
-}
-
-.sedona-bridge__text {
-  margin: 0;
-}
-
-.sedona-bridge__count {
-  &--count-modif {
-    margin: 15px 0 15px 0;
-  }
 }
 
 .sedona-bridge__info {
-  min-width: 280px;
   min-height: 191px;
+  min-width: 320px;
   background-color: $main-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
   color: #ffffff;
+
+  &--modif {
+    padding: 40px 20px 0 20px;
+  }
+}
+
+.sedona-bridge__title {
+  margin: 0 auto 5px auto;
+  font-size: 18px;
+}
+
+.sedona-bridge__text {
+  margin: 0 auto;
+  display: block;
+  line-height: 21px;
+}
+
+.sedona-bridge__count {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sedona-bridge__photo {
+  min-height: 260px;
+  min-width: 320px;
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $main-color;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .sedona-bridge {
-    min-width: 768px;
     min-height: 256px;
-    flex-direction: row-reverse;
-  }
-
-  .sedona-bridge__photo {
-    background-image: url("../img/main-bridge-tablet@1x.jpg");
-    min-width: 512px;
-    flex-grow: 1;
+    min-width: 768px;
+    display: flex;
   }
 
   .sedona-bridge__info {
+    order: 1;
     min-width: 256px;
     min-height: 256px;
 
-    &--info-modif {
-      padding: 0;
+    &--modif {
+      padding: 45px 45px 0 45px;
     }
   }
 
-  .sedona-bridge__title {
-    width: 160px;
-    height: 50px;
+  .sedona-bridge__text {
+    max-width: 160px;
   }
 
-  .sedona-bridge__text {
-    width: 165px;
-    min-height: 65px;
+  .sedona-bridge__title {
+    width: 151px;
+    font-size: 21px;
+  }
+
+  .sedona-bridge__photo {
+    width: 512px;
+    min-height: 256px;
+    flex-grow: 1;
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
+    }
+  }
+
+  .sedona-bridge__count {
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sedona-bridge {
-    width: 1200px;
     min-height: 256px;
-  }
-
-  .sedona-bridge__photo {
-    background-image: url("../img/main-bridge-desktop@1x.jpg");
+    min-width: 1200px;
   }
 
   .sedona-bridge__info {
-    width: 400px;
+    min-height: 256px;
+    min-width: 400px;
+
+    &--modif {
+      padding: 53px 20px 0 20px;
+    }
   }
 
   .sedona-bridge__text {
-    width: 225px;
+    max-width: 220px;
+  }
+
+  .sedona-bridge__photo {
+    min-width: 800px;
+    height: 256px;
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
+    background-position-y: 50%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
   }
 }

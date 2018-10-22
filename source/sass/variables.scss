@@ -1,12 +1,13 @@
-@mixin big-font {
-  font-size: 18px;
-  font-weight: 700;
-}
-
 $main-color: #81b3d1;
 
 $main-form-color: #f1f1f1;
 
+$mobile-width: 320px;
+
 $tablet-width: 768px;
 
 $desktop-width: 1280px;
+
+$retina-dpi: 114dpi;
+
+$retina-dppx: 1.5dppx;

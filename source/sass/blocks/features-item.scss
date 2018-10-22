@@ -1,0 +1,113 @@
+.features-item {
+  ////min-width: 50px;
+  ///min-height: 50px;
+  position: relative;
+  ////flex-grow: 1;
+
+  &--modif {
+    ////padding: 0 0 27px 50px;
+    padding-left: 51px;
+    margin-top: 30px;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--flat::before {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--burger::before {
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.features-item__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.features-item__text {
+  line-height: 21px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features-item {
+    width: 256px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    ////justify-content: flex-end;
+    flex: 1;
+
+    &--modif {
+      //padding: 0 44px 61px 50px;
+      //padding: 69px 20px 20px 0;
+      padding: 69px 47px 0 47px;
+      margin: 0;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &::before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: -158px;
+      margin: auto;
+      width: 75px;
+      height: 80px;
+    }
+
+    &--gift::before {
+      top: -172px;
+      width: 65px;
+      height: 76px;
+    }
+  }
+
+  .features-item__br {
+    display: block;
+  }
+
+  .features-item__text {
+    min-width: 162px;
+  }
+
+  .features-item__title {
+    font-size: 21px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-item {
+    min-width: 400px;
+
+    &::before {
+      top: -142px;
+    }
+  }
+
+  .features-item__text-br {
+    display: block;
+  }
+}

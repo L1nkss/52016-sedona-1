@@ -1,21 +1,51 @@
-.feedback__title {
-  @include big-font;
-  width: 210px;
-  margin: 0 auto;
-}
-
 .feedback {
   min-width: 320px;
-  height: 203px;
+  min-height: 204px;
   text-align: center;
 
-  &--feedback-modif {
-    padding: 45px 20px 20px 20px;
+  &--modif {
+    padding: 37px 20px 0;
   }
 }
 
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 26px;
+}
+
 .feedback__text {
-  width: 280px;
-  min-height: 105px;
   margin: 0 auto;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    min-width: 768px;
+    min-height: 253px;
+
+    &--modif {
+      padding: 74px 60px 0;
+    }
+  }
+
+  .feedback__title {
+    font-size: 30px;
+    margin: 0 auto 31px;
+  }
+
+  .feedback__text {
+    width: 446px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback {
+    min-height: 274px;
+    background-color: #ffffff;
+
+    &--modif {
+      padding: 111px 0 0;
+    }
+  }
 }

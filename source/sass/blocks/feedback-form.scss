@@ -1,25 +1,43 @@
 .feedback-form {
-  outline: 1px solid black;
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
+  background-color: #ffffff;
 
-  &--button {
-    font-size: 21px;
-    font-weight: 700;
-    color: #ffffff;
-    display: block;
-    min-width: 280px;
-    min-height: 58px;
-    text-align: center;
+  &--modif {
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .feedback-form {
-    flex-direction: row;
-    min-height: 768px;
+    display: flex;
     flex-wrap: wrap;
-    padding: 0 60px;
+
+    &--modif {
+      padding: 0 60px 60px;
+    }
+  }
+
+  .feedback-form__button {
+    margin: 0;
+
+    &::after {
+      content: "* — обязательные поля";
+      position: absolute;
+      color: #000000;
+      right: 40px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    background-color: #ffffff;
+    max-width: 1200px;
+
+    &--modif {
+      padding: 0 120px;
+    }
   }
 }

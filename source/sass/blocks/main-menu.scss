@@ -1,57 +1,82 @@
-.main-menu__menu-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+@media (max-width: 767px) {
+  .main-menu__item {
+    &:nth-child(1) {
+      border-bottom: 1px solid #678fa8;
+    }
+
+    &:nth-child(2) {
+      border-bottom: 1px solid #678fa8;
+      border-top: 1px solid #9ac2db;
+    }
+
+    &:nth-child(3) {
+      border-bottom: 1px solid #678fa8;
+      border-top: 1px solid #9ac2db;
+    }
+
+    &:nth-child(4) {
+      border-top: 1px solid #9ac2db;
+    }
+  }
 }
 
-.main-menu__menu-action {
-  min-height: 56px;
-  min-width: 320px;
-  padding: 0 20px;
+.main-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu__item {
+  text-align: center;
+  height: 56px; //в firefox не работает Min-height
 }
 
 .main-menu__link {
-  @include big-font;
-  text-decoration: none;
   display: block;
-  text-align: center;
-  background-color: $main-color;
-  border-bottom: 1px solid black;
-  min-height: 56px;
+  padding-top: 7px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  min-height: 54px;
   color: #ffffff;
 
-  &--item-link {
-    padding: 20px 0;
+  &:hover {
+    color: #c2d9e8;
   }
-}
 
-.main-menu__menu-item {
-  min-height: 56px;
-  list-style: none;
-}
-
-.main-menu_logo {
-  position: absolute;
+  &:active {
+    color: #dadada;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .main-menu__menu-list {
-    flex-direction: row;
-    justify-content: space-around;
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
   }
 
-  .main-menu__menu-action {
-    display: none;
-  }
+  .main-menu__item {
+    width: 154px;
+    display: table;
 
-  .main-menu__menu-item {
-    flex-grow: 1;
+    &:nth-child(3) {
+      margin-left: auto;
+    }
   }
 
   .main-menu__link {
-    background-color: #ffffff;
-    border: 0;
     color: #000000;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__item {
+    width: 240px;
   }
 }

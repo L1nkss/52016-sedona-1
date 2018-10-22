@@ -6,7 +6,7 @@
   align-items: center;
 
   &--interested-modif {
-    padding: 32px 20px 50px 20px;
+    padding: 25px 20px 15px 20px;
   }
 }
 
@@ -24,21 +24,41 @@
   min-width: 280px;
   min-height: 58px;
   text-align: center;
-  padding: 18px 0 20px 0;
+  padding: 16px 0 17px 0;
 }
 
 .sedona-interested__text {
   text-align: center;
-  margin: 30px 0 42px 0;
+  margin: 18px 0 37px 0;
+  line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
+  .sedona-interested {
+    min-height: 317px;
+
+    &--interested-modif {
+      padding: 55px 20px 15px 20px;
+    }
+  }
+
   .sedona-interested__text {
-    width: 445px;
+    margin: 30px 0 43px 0;
+    width: 450px;
     min-height: 45px;
   }
 
   .sedona-interested__button {
     width: 457px;
+  }
+
+  .sedona-interested__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-interested {
+    min-height: 330px;
   }
 }

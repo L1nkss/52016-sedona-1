@@ -1,67 +1,51 @@
 .sedona-list {
-  min-height: 415px;
+  ////min-height: 416px;
   min-width: 320px;
+
+  &--modif {
+    padding: 0 20px 35px;
+  }
+}
+
+.sedona-list__block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: column;
-
-  &--list-modif {
-    padding-bottom: 42px;
-    padding-top: 40px;
-  }
-}
-
-.sedona-list__text {
-  margin: 0;
-}
-
-.sedona-list__title {
-  @include big-font;
-  margin: 0;
-}
-
-.sedona-list__item {
-  min-height: 110px;
-
-  &--item-modif {
-    padding-left: 50px;
-    padding-right: 20px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .sedona-list {
-    flex-direction: row;
+    ////min-height: 330px;
     min-width: 768px;
-    min-height: 256px;
+    ////display: flex;
+    ////flex-wrap: wrap;
 
-    &--list-modif {
+    &--modif {
       padding: 0;
     }
   }
 
-  .sedona-list__text {
-    width: 170px;
-    height: 70px;
-  }
+  .sedona-list__block {
+    flex-direction: row;
+    flex-wrap: wrap;
 
-  .sedona-list__item {
-    flex-basis: 256px;
-    min-height: 330px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &--item-modif {
-      padding: 0;
+    &--modif {
+      padding-top: 90px;
+      padding-bottom: 61px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .sedona-list__text {
-    width: 280px;
-    height: 70px;
+  .sedona-list {
+    background-color: #ffffff;
+  }
+
+  .sedona-list__block {
+    &--modif {
+      padding-bottom: 82px;
+    }
   }
 }

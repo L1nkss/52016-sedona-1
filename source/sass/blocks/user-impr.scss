@@ -1,35 +1,124 @@
-.user-impr__title {
-  @include big-font;
-  margin: 0 auto;
-  width: 245px;
-}
-
 .user-impr {
-  text-transform: none;
-  border: 0;
+  //min-width: 280px;
+  //min-height: 290px;
   min-width: 320px;
-  display: flex;
+  border: 0;
   margin: 0;
+  padding: 0;
+  //border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 
-  &--impr-modif {
-    padding: 20px 20px 0 20px;
+  &--modif {
+    padding: 18px 20px 2px;
   }
 }
 
+.user-impr__title {
+  margin: 0 auto 38px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 234px;
+}
 
-@media (min-width: $tablet-width) {
-  .user-impr {
-    width: 324px;
-    min-height: 305px;
-    order: -1;
-    flex-grow: 1;
+.user-impr__radio {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  min-width: 280px;
+  height: 56px;
+  position: relative;
 
-    &--impr-modif {
-      padding: 0;
+  &--modif {
+    padding-left: 78px;
+    margin-bottom: 12px;
+  }
+
+  &::before {
+    content: "";
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: -12px;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      opacity: 0.3;
     }
   }
 }
 
-.user-impr__radio-ch {
-  display: block;
+.user-impr__button {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  &:checked + .user-impr__radio::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 19px;
+    top: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-impr {
+    order: -1;
+    flex: 1;
+    flex-basis: 324px;
+    border-right: 1px solid #f2f2f2;
+    height: 300px;
+    border-bottom: 0;
+
+    &--modif {
+      padding: 0;
+    }
+  }
+
+  .user-impr__title {
+    width: 284px;
+    font-size: 21px;
+    margin: 0 0 72px;
+  }
+
+  .user-impr__radio {
+    &--modif {
+      padding-left: 74px;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-impr {
+    &--modif {
+      padding-left: 4px;
+    }
+  }
+
+  .user-impr__title {
+    margin-left: 76px;
+  }
 }

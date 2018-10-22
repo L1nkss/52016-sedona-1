@@ -1,16 +1,32 @@
-.card-list {
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-}
+////.card-list {
+////min-width: 320px;
+
+////&--modif {
+// padding: 0 20px 0;
+////}
+////}
 
 @media (min-width: $tablet-width) {
   .card-list {
-    min-width: 768px;
+    ////min-width: 748px;
+    width: 650px;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    margin: 0 auto;
 
-    &--list-modif {
+    &--modif {
+      ////padding: 0 60px 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-list {
+    ////min-width: 1200px;
+    ////min-height: 668px;
+    width: 1200px;
+
+    &--modif {
       padding: 0;
     }
   }

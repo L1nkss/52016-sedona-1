@@ -1,34 +1,27 @@
 .sedona-advantages {
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
+  min-height: 503px;
   background-color: #eeeeee;
-}
 
-.sedona-advantages__item {
-  text-align: center;
-  margin: 0;
-  flex-basis: 168px;
-  flex-grow: 1;
-
-  &:nth-child(2) {
-    border-top: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
+  &--modif {
+    padding: 0 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .sedona-advantages {
-    flex-direction: row;
-    min-height: 256px;
     min-width: 768px;
+    min-height: 256px;
+    display: flex;
 
-    &--advantages-modif {
+    &--modif {
       padding: 0;
     }
   }
+}
 
-  .sedona-advantages__item {
-    flex-basis: 256px;
+@media (min-width: $desktop-width) {
+  .sedona-advantages {
+    min-width: 1200px;
   }
 }
