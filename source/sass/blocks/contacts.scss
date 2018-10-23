@@ -68,9 +68,10 @@
   border: 0;
   background-color: #f2f2f2;
   padding-right: 56px;
+  padding-left: 22px;
 
   &::placeholder {
-    padding-left: 22px;
+    //padding-left: 22px;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
@@ -88,6 +89,7 @@
     background-color: #ffffff;
     border: 3px solid #e5e5e5;
     outline: none;
+    padding-left: 19px;
 
     &::placeholder {
       background-color: #ffffff;

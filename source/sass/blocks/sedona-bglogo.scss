@@ -1,14 +1,8 @@
 .sedona-bglogo {
   height: 388px;
   min-width: 320px;
-  /*
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
- */
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: 101.92%, 86%, cover;
+  background-size: 104.92%, 88%, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position-y: bottom, center, center;
   background-position-x: center, center, center;
@@ -24,6 +18,11 @@
     height: 158px;
     background-size: 101.92%, 71%, 250%;
     background-position-y: bottom, 50px, 90%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@2x.jpg");
+    }
   }
 }
 
@@ -32,8 +31,9 @@
     height: 518px;
     min-width: 320px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-size: 101.92%, 61%, cover;
+    background-size: 101.92%, 60%, cover;
     background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 100%, 46%, 50%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -57,7 +57,7 @@
 @media (min-width: $desktop-width) {
   .sedona-bglogo {
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
-    background-size: 101.92%, 40%, cover;
+    background-size: 101.92%, 38%, cover;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {

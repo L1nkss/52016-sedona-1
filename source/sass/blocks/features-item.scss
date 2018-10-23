@@ -28,6 +28,8 @@
 
   &--gift::before {
     background-image: url("../img/icon-gift.svg");
+    left: 3px;
+    top: -13px;
   }
 
   &--burger::before {
@@ -104,6 +106,16 @@
 
     &::before {
       top: -142px;
+    }
+
+    &--gift::before {
+      background-image: url("../img/icon-gift.svg");
+      top: -148px;
+    }
+
+    &--burger::before {
+      background-image: url("../img/icon-burger.svg");
+      top: -135px;
     }
   }
 
