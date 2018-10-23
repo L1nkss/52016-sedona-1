@@ -8,10 +8,6 @@
   }
 }
 
-.socials__item__icon {
-  fill: #ffffff;
-}
-
 .social__item__link {
   width: 46px;
   height: 48px;
@@ -20,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
 
   &:hover {
     background-color: #669ec0;
@@ -27,10 +24,7 @@
 
   &:active {
     background-color: #5496bd;
-
-    .socials__item__icon {
-      fill: rgba(255, 255, 255, 0.5);
-    }
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
