@@ -27,6 +27,7 @@
 @media (min-width: $tablet-width) {
   .sedona-map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
+    min-height: 348px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
