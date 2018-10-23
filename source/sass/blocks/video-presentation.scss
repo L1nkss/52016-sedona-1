@@ -54,13 +54,14 @@
   border: none;
   margin-bottom: 9px;
   margin-right: auto;
+  color: #5c6870;
 
-  &:hover path {
-    fill: #333333;
+  &:hover {
+    color: #333333;
   }
 
-  &:active path {
-    fill: #b8b8b8;
+  &:active {
+    color: #b8b8b8;
   }
 }
 
@@ -70,13 +71,14 @@
   background-color: transparent;
   border: none;
   margin-bottom: 9px;
+  color: #5c6870;
 
-  &:hover path {
-    fill: #333333;
+  &:hover {
+    color: #333333;
   }
 
-  &:active path {
-    fill: #b8b8b8;
+  &:active {
+    color: #b8b8b8;
   }
 }
 
@@ -86,13 +88,14 @@
   background-color: transparent;
   border: none;
   margin-bottom: 9px;
+  color: #5c6870;
 
-  &:hover polygon {
-    fill: #333333;
+  &:hover {
+    color: #333333;
   }
 
-  &:active polygon {
-    fill: #b8b8b8;
+  &:active {
+    color: #b8b8b8;
   }
 }
 
@@ -191,13 +194,14 @@
     order: -1;
     padding-top: 10px;
     padding-left: 35px;
+    color: #ffffff;
 
-    &:hover path {
-      fill: #c2c2c2;
+    &:hover {
+      color: #c2c2c2;
     }
 
-    &:active path {
-      fill: #949494;
+    &:active {
+      color: #949494;
     }
   }
 
@@ -205,35 +209,29 @@
     margin-bottom: 0;
     padding-top: 3px;
     margin-right: 13px;
+    color: #ffffff;
 
-    &:hover path {
-      fill: #c2c2c2;
+    &:hover {
+      color: #c2c2c2;
     }
 
-    &:active path {
-      fill: #949494;
+    &:active {
+      color: #949494;
     }
   }
 
   .video-presentation__control__fullscreen {
     padding-top: 11px;
     margin-right: 29px;
+    color: #ffffff;
 
-    &:hover polygon {
-      fill: #c2c2c2;
+    &:hover {
+      color: #c2c2c2;
     }
 
-    &:active polygon {
-      fill: #949494;
+    &:active {
+      color: #949494;
     }
-  }
-
-  .video-presentation__control path {
-    fill: #ffffff;
-  }
-
-  .video-presentation__control polygon {
-    fill: #ffffff;
   }
 
   /* Конец видео */
