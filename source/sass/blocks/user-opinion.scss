@@ -63,7 +63,7 @@
 
   .user-opinion__button {
     width: 324px;
-    margin: 60px 0 0;
+    margin: 57px 0 0;
 
     &::after {
       content: "* — обязательные поля";
@@ -126,12 +126,14 @@
   .user-opinion__title {
     &::before {
       content: "";
-      display: none;
+      width: 272px;
+      top: 32px;
     }
 
     &::after {
       content: "";
-      display: none;
+      width: 272px;
+      top: 32px;
     }
   }
 }

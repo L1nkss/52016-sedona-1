@@ -31,7 +31,8 @@
     "images": "gulp image-optimaz",
     "webp": "gulp webp",
     "sprite": "gulp sprite",
-    "html": "gulp html"
+    "html": "gulp html",
+    "refresh": "gulp refresh"
   },
   "browserslist": [
     "last 2 versions",
