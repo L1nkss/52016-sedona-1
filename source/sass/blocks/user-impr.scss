@@ -34,6 +34,11 @@
     margin-bottom: 12px;
   }
 
+  &:focus {
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px #0000ff;
+  }
+
   &::before {
     content: "";
     width: 53px;
