@@ -248,6 +248,10 @@
     }
   }
 
+  .video-presentation__descr__title {
+    margin: 0 auto 31px;
+  }
+
   .video-presentation__window {
     width: 800px;
   }
@@ -255,5 +259,9 @@
   .video-presentation__descr {
     min-width: 800px;
     min-height: 175px;
+  }
+
+  .video-presentation__control__toogler__slider {
+    left: 24%;
   }
 }
