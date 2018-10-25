@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -98,6 +98,28 @@
 
     <fieldset class="user-visit user-visit--modif">
       <h4 class="user-visit__title">Посещенные достопримечательности:</h4>
+        <ul class="user-visit__form user-visit__form--modif">
+          <li class="user-visit__block user-visit__block--modif">
+            <input class="user-visit__button" type="checkbox" name="places" id="bridge" value="bridge" checked>
+            <label class="user-visit__check user-visit__check--modif" for="bridge">Мост Дьявола</label>
+          </li>
+          <li class="user-visit__block user-visit__block--modif">
+            <input class="user-visit__button" type="checkbox" name="places" id="mount" value="mount" checked>
+            <label class="user-visit__check user-visit__check--modif" for="mount">Гора-Колокол</label>
+          </li>
+          <li class="user-visit__block user-visit__block--modif">
+            <input class="user-visit__button" type="checkbox" name="places" id="park" value="park" checked>
+            <label class="user-visit__check user-visit__check--modif" for="park">Слайд-парк</label>
+          </li>
+          <li class="user-visit__block user-visit__block--modif">
+            <input class="user-visit__button" type="checkbox" name="places" id="cliffs" value="cliffs">
+            <label class="user-visit__check user-visit__check--modif" for="cliffs">Красные скалы</label>
+          </li>
+        </ul>
+    </fieldset>
+<!--
+    <fieldset class="user-visit user-visit--modif">
+      <h4 class="user-visit__title">Посещенные достопримечательности:</h4>
       <div class="user-visit__form">
         <p class="user-visit__block">
           <input class="user-visit__button" type="checkbox" name="places" id="bridge" value="bridge" checked>
@@ -117,7 +139,7 @@
         </p>
       </div>
     </fieldset>
-
+-->
     <fieldset class="user-opinion user-opinion--modif">
       <h4 class="user-opinion__title">Опишите свои эмоции:</h4>
       <textarea class="user-opinion__text" placeholder="Опишите подробно все свои восторги" name="opinion"></textarea>
@@ -180,7 +202,7 @@
     </p>
   </footer>
 
-  <!--<script src="js/main.js"></script>-->
+  <script src="js/main.js"></script>
   <script src="js/svgxuse.js" defer></script>
 </body>
 
