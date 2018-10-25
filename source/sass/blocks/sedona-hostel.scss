@@ -79,6 +79,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .sedona-hostel {
+    min-height: 332px;
+  }
+
   .sedona-hostel__text {
     margin-bottom: 46px;
   }
