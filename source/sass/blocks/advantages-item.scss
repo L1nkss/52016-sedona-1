@@ -39,6 +39,11 @@
     &--modif {
       padding: 44px 50px 0 48px;
     }
+
+    &:nth-child(2) {
+      border-top: none;
+      border-bottom: none;
+    }
   }
 
   .advantages-item__text__br {
@@ -70,6 +75,6 @@
   }
 
   .advantages-item__text {
-    min-width: 285px;
+    min-width: 287px;
   }
 }

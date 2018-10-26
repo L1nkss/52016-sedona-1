@@ -45,6 +45,11 @@
   &--modif {
     margin-bottom: 25px;
   }
+
+  &:focus {
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px #0000ff;
+  }
 }
 
 .user-visit__title {
