@@ -50,6 +50,20 @@
   }
 }
 
+.user-opinion__req-fields {
+  position: absolute;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  right: 0;
+  bottom: 0;
+  display: none;
+
+  &--modif {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .user-opinion {
     flex: 1;
@@ -62,18 +76,17 @@
     }
   }
 
+  .user-opinion__req-fields {
+    bottom: 15px;
+
+    &--modif {
+      display: block;
+    }
+  }
+
   .user-opinion__button {
     width: 324px;
     margin: 57px 0 0;
-
-    &::after {
-      content: "* — обязательные поля";
-      position: absolute;
-      color: black;
-      font-size: 14px;
-      font-weight: 400;
-      right: 0;
-    }
   }
 
   .user-opinion__title {
@@ -113,6 +126,10 @@
       margin-top: 30px;
       padding: 18px 0 65px;
     }
+  }
+
+  .user-opinion__req-fields {
+    bottom: 80px;
   }
 
   .user-opinion__text {
