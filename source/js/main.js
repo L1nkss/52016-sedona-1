@@ -24,25 +24,25 @@ function open_menu() {
 
 function close_error() {
   event.preventDefault()
-  error_modal.style.display = "none";
+  error_modal.style.display = 'none';
 }
 
 function show_error () {
   event.preventDefault()
-  error_modal.style.display = "block";
+  error_modal.style.display = 'block';
 }
 
 function close_success() {
-  success_modal.style.display = "none";
+  success_modal.style.display = 'none';
 }
 
 function show_success () {
   event.preventDefault()
-  success_modal.style.display = "block";
+  success_modal.style.display = 'block';
 }
 
 function check_form_values() {
-  var error_color = "thin solid red";
+  var error_color = 'thin solid red';
   if (!user_name.value) {
     event.preventDefault()
     user_name.style.border = error_color;
@@ -73,10 +73,10 @@ function check_form_values() {
 }
 
 window.onload = close_menu();
-button.addEventListener("click",open_menu);
+button.addEventListener('click',open_menu);
 
-form_button.addEventListener("click",check_form_values);
+form_button.addEventListener('click',check_form_values);
 
-error_button.addEventListener("click",close_error);
+error_button.addEventListener('click',close_error);
 
-success_button.addEventListener("click",close_success);
+success_button.addEventListener('click',close_success);
