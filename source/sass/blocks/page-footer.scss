@@ -77,6 +77,12 @@
     &--modif {
       padding: 0 111px;
     }
+
+    &::after {
+      content: "";
+      min-height: inherit;
+      font-size: 0;
+    }
   }
 
   .page-footer__creater {
